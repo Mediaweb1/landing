@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/social-connections/:match*",
+      "destination": "https://dashboard.mediaweb.app/api/social-connections/:match*"
+    },
+    {
+      "source": "/api/auth/:match*",
+      "destination": "https://dashboard.mediaweb.app/api/auth/:match*"
+    },
+    {
+      "source": "/api/:match*",
+      "destination": "https://dashboard.mediaweb.app/api/:match*"
+    }
+  ]
+}
