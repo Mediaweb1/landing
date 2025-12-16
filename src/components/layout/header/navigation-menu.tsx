@@ -133,13 +133,13 @@ export function NavigationMenuComponent() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink
-            href="https://blog.mediaweb.app"
+            href="/faq"
             className={cn(
               navigationMenuTriggerStyle(),
               "text-white bg-transparent hover:bg-white/10 hover:text-white"
             )}
           >
-            Blog
+            FAQ
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>

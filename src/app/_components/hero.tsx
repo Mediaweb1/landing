@@ -41,7 +41,7 @@ const Hero = () => {
           </Link>
 
           <Link
-            href="https://editor.mediaweb.app/sandbox"
+            href="https://dashboard.mediaweb.app/editor/sandbox"
             className="border-gray-600 text-white hover:bg-white/10 px-8 py-3 text-lg backdrop-blur-xs bg-transparent border rounded-md"
           >
             Try the sandbox

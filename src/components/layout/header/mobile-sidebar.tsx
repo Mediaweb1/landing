@@ -125,10 +125,10 @@ export function MobileSidebar() {
           </SheetClose>
           <SheetClose asChild>
             <Link 
-              href="https://blog.mediaweb.app" 
+              href="/faq" 
               className="flex items-center h-14 px-4 text-white hover:text-primary-400 text-lg font-semibold hover:bg-slate-800/50 rounded-lg transition-colors"
             >
-              Blog
+              FAQ
             </Link>
           </SheetClose>
           <SheetClose asChild>

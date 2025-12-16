@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="relative w-full">
       <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border-t border-slate-700 flex justify-center p-8 py-12 lg:p-12">
         <div className="w-full md:max-w-[80%] lg:max-w-[1200px] flex flex-col justify-between">
-          <div className="flex flex-col lg:flex-row space-y-12 lg:space-y-0 justify-between">
+          <div className="flex flex-col lg:flex-row space-y-12 lg:space-y-0 lg:space-x-24 justify-between">
             <div className="w-full md:w-fit flex flex-col space-y-8">
               <Link
                 className="h-10 flex items-center space-x-1 md:space-x-2 hover:scale-95 relative z-60 cursor-pointer"
@@ -88,16 +88,36 @@ const Footer = () => {
             </div>
 
             {/* Links */}
-            <div className="w-full lg:w-1/2 flex justify-between">
+            <div className="w-full lg:w-2/3 flex justify-between">
+             
+
               <div className="flex flex-col space-y-4">
+                <h6 className="text-2xl text-primary-400 font-semibold">
+                  Compare
+                </h6>
+                <Link
+                  className="text-slate-300 hover:text-primary-400 transition-colors"
+                  href="/compare/mediakits-io"
+                >
+                  vs MediaKits.io
+                </Link>
+                <Link
+                  className="text-slate-300 hover:text-primary-400 transition-colors"
+                  href="/compare/lovable"
+                >
+                  vs Lovable
+                </Link>
+              </div>
+
+               <div className="flex flex-col space-y-4">
                 <h6 className="text-2xl text-primary-400 font-semibold">
                   Product
                 </h6>
                 <Link
                   className="text-slate-300 hover:text-primary-400 transition-colors"
-                  href="/"
+                  href="/faq"
                 >
-                  Features
+                  FAQ
                 </Link>
                 <Link
                   className="text-slate-300 hover:text-primary-400 transition-colors"
@@ -105,12 +125,12 @@ const Footer = () => {
                 >
                   Pricing
                 </Link>
-                <Link
+              {/*   <Link
                   className="text-slate-300 hover:text-primary-400 transition-colors"
                   href="/"
                 >
                   Templates
-                </Link>
+                </Link> */}
               </div>
 
               <div className="flex flex-col space-y-4">
@@ -139,7 +159,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Bottom Section */}
+        
           <div className="flex flex-col space-y-2 sm:space-y-0 sm:flex-row justify-between items-center pt-4 md:pt-8 border-t border-slate-700">
             <div className="w-full sm:w-fit text-sm md:text-xl text-slate-400 whitespace-nowrap">
               © Mediaweb 2025

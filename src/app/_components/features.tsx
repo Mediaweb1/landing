@@ -52,10 +52,10 @@ const FeatureRundown = () => {
     },
     {
       icon: HardDrive,
-      title: "AWS S3 Storage",
-      description: "Secure, scalable file hosting with global CDN speed.",
+      title: "Image Optimization",
+      description: "Lightning-fast photo loading with automatic optimization.",
       gradient: "from-green-500 to-green-600",
-      jumpTo: "aws-storage",
+      jumpTo: "image-optimization",
     },
   ];
 
