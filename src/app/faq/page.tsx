@@ -6,37 +6,100 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@mediaweb1/sdk/shadcn";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "FAQ - Mediaweb",
+  description: "Frequently asked questions about Mediaweb - AI Portfolio Website Builder for Creators",
+  alternates: {
+    canonical: "/faq",
+  },
+};
 
 const faqs = [
   {
     question: "How does the AI assistant work?",
     answer:
       "Simply describe what you want in plain English. Our AI assistant understands your vision and builds pages, sections, or entire websites in seconds. You can ask it to create a portfolio page, add a contact form, or redesign a section—it handles the technical work while you focus on your content.",
+    featured: true,
   },
   {
     question: "Can I use my own domain?",
     answer:
       "Yes! You can connect your own custom domain (like yourname.com) or use our free .mediaweb.app subdomain. Custom domain setup is straightforward, and we'll guide you through the process.",
+    featured: false,
   },
   {
     question: "Do you have a free plan?",
     answer:
       "We don't offer a free plan, but we do have a 30-day money-back guarantee—so you can try Mediaweb risk-free. Plus, our early bird special gives you 80% off ($10/month instead of $50/month) until December 31, 2025. Lock in this price forever as an early adopter.",
+    featured: true,
   },
   {
     question: "Do I need coding skills to use Mediaweb?",
     answer:
       "Not at all. Mediaweb is built for creators, not developers. Use our AI assistant to build with simple descriptions, choose from 40+ designer templates, or customize with our visual editor. No code required.",
+    featured: true,
   },
   {
     question: "How does the MediaKit feature work?",
     answer:
       "Connect your social media accounts (Instagram, Facebook, YouTube, TikTok), and we automatically generate a professional MediaKit with your stats, demographics, and engagement metrics. It's perfect for pitching to brands and sponsors—all updated in real-time.",
+    featured: true,
   },
   {
     question: "Do I need to worry about hosting?",
     answer:
       "No. Hosting is completely automatic and included. Your portfolio is hosted on our reliable infrastructure with automatic image optimization, global CDN delivery, and 99.9% uptime. You just create—we handle everything else.",
+    featured: false,
+  },
+  {
+    question: "Can I switch templates after I've started building?",
+    answer:
+      "Yes! You can switch to any of our 40+ templates at any time. However, when you switch templates, you'll start fresh from that new template. Your previous content won't automatically transfer, so we recommend choosing a template you like early on or being prepared to rebuild when switching.",
+    featured: false,
+  },
+  {
+    question: "How long does it take to build a portfolio with Mediaweb?",
+    answer:
+      "Most creators have a professional portfolio live in under an hour. With our AI assistant and templates, you can have something beautiful in minutes. Then customize at your own pace.",
+    featured: false,
+  },
+  {
+    question: "What social media platforms do you integrate with?",
+    answer:
+      "Currently Instagram, Facebook, YouTube, and TikTok. We're constantly adding more platforms based on creator feedback.",
+    featured: false,
+  },
+  {
+    question: "Can I sell products or services through my Mediaweb portfolio?",
+    answer:
+      "Not currently, but if this is something you really need, let us know! We build features based on what our creators actually want and use. While it's not on our immediate roadmap, strong demand from our community could change that. For now, you can link to external payment platforms.",
+    featured: false,
+  },
+  {
+    question: "How do I cancel my subscription?",
+    answer:
+      "You can cancel anytime from your dashboard. No long-term contracts. Plus, we offer a 30-day money-back guarantee if you're not satisfied.",
+    featured: false,
+  },
+  {
+    question: "Will my portfolio work on mobile devices?",
+    answer:
+      "Absolutely. Our AI is trained to make designs responsive and fit perfectly on all devices. You can also implement responsive styling using the visual builder, and all our templates are built to be fully responsive. Your portfolio looks perfect on mobile, tablet, and desktop.",
+    featured: true,
+  },
+  {
+    question: "Can I have multiple portfolios or websites?",
+    answer:
+      "Yes! On our early bird plan with the 80% discount, you can have up to 3 websites. Perfect if you want separate portfolios for different types of work or brands.",
+    featured: false,
+  },
+  {
+    question: "What happens to my images and content if I cancel?",
+    answer:
+      "You can download your images before canceling. We recommend backing up your content regularly. After cancellation, your site and data are retained for 30 days before permanent deletion.",
+    featured: false,
   },
 ];
 

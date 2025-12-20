@@ -3,6 +3,14 @@ import type { NextRequest } from "next/server";
 
 export function middleware(req: NextRequest) {
   const { nextUrl } = req;
+  
+  // Redirect www to non-www
+  if (nextUrl.host.startsWith('www.')) {
+    const newUrl = nextUrl.clone();
+    newUrl.host = nextUrl.host.replace('www.', '');
+    return NextResponse.redirect(newUrl, 301);
+  }
+  
   const res = NextResponse.next();
   
   // Get affiliate and referral codes from query params

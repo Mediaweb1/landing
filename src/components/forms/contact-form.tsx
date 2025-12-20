@@ -28,7 +28,7 @@ const ContactForm = () => {
 
     const subject = encodeURIComponent(formData.subject);
     const body = encodeURIComponent(formData.message);
-    const mailtoLink = `mailto:admin@mediaweb.app?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:support@mediaweb.app?subject=${subject}&body=${body}`;
 
     window.location.href = mailtoLink;
 

@@ -9,9 +9,15 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+const baseUrl = "https://mediaweb.app";
+
 export const metadata: Metadata = {
-  title: "Mediaweb - AI Website Builder for Creators",
+  title: "Mediaweb - AI Portfolio Website Builder for Creators",
   description: "Create stunning portfolio websites in minutes with AI. Perfect for artists, creators, and influencers.",
+  metadataBase: new URL(baseUrl),
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({
@@ -20,8 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} antialiased`}>
+    <html lang="en" className="bg-slate-900">
+      <body className={`${inter.variable} antialiased bg-slate-900`}>
         <Header />
         <main className="min-h-screen">
           {children}

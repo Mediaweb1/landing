@@ -39,7 +39,7 @@ const Page = () => {
             <div className="flex items-center space-x-3 px-6 py-3 rounded-full bg-slate-800/60 backdrop-blur-sm border border-slate-700/50">
               <Mail size={20} className="text-primary" />
               <span className="text-slate-200 text-lg font-medium">
-                admin@mediaweb.app
+                support@mediaweb.app
               </span>
             </div>
           </div>

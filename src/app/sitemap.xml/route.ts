@@ -10,7 +10,13 @@ export async function GET() {
     '/contact',
     '/privacy-policy',
     '/terms-of-service',
-    '/integrations'
+    '/faq',
+    '/compare/lovable',
+    '/compare/mediakits-io',
+    '/integrations/facebook',
+    '/integrations/instagram',
+    '/integrations/tiktok',
+    '/integrations/youtube'
   ];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
