@@ -1,5 +1,3 @@
-"use client";
-
 import {
   Check,
   Sparkles,
@@ -10,6 +8,15 @@ import {
   Rocket,
 } from "lucide-react";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Mediaweb vs Lovable - Compare Creator Platforms",
+  description: "Lovable is excellent for building software products. But if you're a creator who needs a portfolio and mediakit—not a SaaS app—Mediaweb is built specifically for you.",
+  alternates: {
+    canonical: "/compare/lovable",
+  },
+};
 
 export default function LovableComparison() {
   return (

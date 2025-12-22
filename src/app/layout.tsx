@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
+import { PostHogProvider } from "./post-hog";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-slate-900">
       <body className={`${inter.variable} antialiased bg-slate-900`}>
+        <PostHogProvider />
         <Header />
         <main className="min-h-screen">
           {children}

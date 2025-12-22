@@ -1,7 +1,14 @@
-"use client";
-
 import { Check, Sparkles, Users, Globe, Palette, Zap, Rocket } from "lucide-react";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Mediaweb vs MediaKits.io - Complete Portfolio vs MediaKit Only",
+  description: "MediaKits.io is great for mediakits. But what if you need a complete portfolio website too? That's where Mediaweb shines—you get everything in one platform.",
+  alternates: {
+    canonical: "/compare/mediakits-io",
+  },
+};
 
 export default function MediakitsIOComparison() {
   return (

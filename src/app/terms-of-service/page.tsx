@@ -1,3 +1,13 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms of Service - Mediaweb",
+  description: "Please read these terms carefully before using our service. Terms and conditions for using Mediaweb.",
+  alternates: {
+    canonical: "/terms-of-service",
+  },
+};
+
 const TermsOfService = () => {
   return (
     <div className="min-h-screen bg-slate-900 relative overflow-hidden">

@@ -1,3 +1,13 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy - Mediaweb",
+  description: "Your privacy matters to us. Here's how we protect and use your data at Mediaweb.",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
+};
+
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-slate-900 relative overflow-hidden">

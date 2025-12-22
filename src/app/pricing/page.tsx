@@ -1,4 +1,13 @@
 import PricingPlans from "./pricing-plans";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Pricing - Mediaweb",
+  description: "Simple, transparent pricing for creators. Get 80% off with our early bird special - $10/month instead of $50/month.",
+  alternates: {
+    canonical: "/pricing",
+  },
+};
 
 const PricingPage = () => {
   return (

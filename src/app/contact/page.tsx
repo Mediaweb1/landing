@@ -1,5 +1,14 @@
 import ContactForm from "@/components/forms/contact-form";
 import { Mail, Send } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us - Mediaweb",
+  description: "Have a question or want to work together? Send us a message and we'll get back to you as soon as possible.",
+  alternates: {
+    canonical: "/contact",
+  },
+};
 
 const Page = () => {
   return (
