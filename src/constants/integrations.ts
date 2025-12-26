@@ -6,25 +6,25 @@ export const INTEGRATIONS: {
 }[] = [
   {
     title: "Facebook",
-    href: "https://docs.mediaweb.app/en/social-media-integration/facebook-integration",
+    href: "/integrations/facebook",
     description: "Pages, Reels & Stories.",
     imageURL: "/icons/original-logos/facebook.webp",
   },
   {
     title: "Instagram",
-    href: "https://docs.mediaweb.app/en/social-media-integration/instagram-integration",
+    href: "/integrations/instagram",
     description: "Posts, Reels & Stories.",
     imageURL: "/icons/original-logos/instagram.webp",
   },
   {
     title: "Tiktok",
-    href: "https://docs.mediaweb.app/en/social-media-integration/tiktok-integration",
+    href: "/integrations/tiktok",
     description: "Videos.",
     imageURL: "/icons/original-logos/tiktok.webp",
   },
   {
     title: "Youtube",
-    href: "https://docs.mediaweb.app/en/social-media-integration/youtube-integration",
+    href: "/integrations/youtube",
     description: "Videos & Shorts.",
     imageURL: "/icons/original-logos/youtube.webp",
   },
