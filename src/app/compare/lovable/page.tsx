@@ -11,10 +11,76 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Mediaweb vs Lovable - Compare Creator Platforms",
-  description: "Lovable is excellent for building software products. But if you're a creator who needs a portfolio and mediakit—not a SaaS app—Mediaweb is built specifically for you.",
+  title: "Mediaweb vs Lovable – Creator Portfolio + Media Kit",
+  description: "Compare Mediaweb and Lovable for creator portfolios and media kits. Mediaweb is built specifically for creators, not developers.",
   alternates: {
     canonical: "/compare/lovable",
+  },
+  openGraph: {
+    siteName: "Mediaweb",
+    type: "website",
+    title: "Mediaweb vs Lovable – Creator Portfolio + Media Kit",
+    description: "Compare Mediaweb and Lovable for creator portfolios and media kits. Mediaweb is built specifically for creators, not developers.",
+    url: "https://mediaweb.app/compare/lovable",
+    images: [
+      {
+        url: "https://mediaweb.app/og/compare-lovable.png",
+        width: 1200,
+        height: 630,
+        alt: "Mediaweb – AI portfolio + media kit",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mediaweb vs Lovable – Creator Portfolio + Media Kit",
+    description: "Compare Mediaweb and Lovable for creator portfolios and media kits. Mediaweb is built specifically for creators, not developers.",
+    images: ["https://mediaweb.app/og/compare-lovable.png"],
+  },
+  other: {
+    "application/ld+json": JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://mediaweb.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Compare",
+              "item": "https://mediaweb.app/compare"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Mediaweb vs Lovable",
+              "item": "https://mediaweb.app/compare/lovable"
+            }
+          ]
+        },
+        {
+          "@type": "Article",
+          "headline": "Mediaweb vs Lovable – Creator Portfolio + Media Kit",
+          "description": "Compare Mediaweb and Lovable for creator portfolios and media kits. Mediaweb is built specifically for creators, not developers.",
+          "author": {
+            "@type": "Organization",
+            "name": "Mediaweb"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Mediaweb"
+          },
+          "datePublished": "2025-01-05",
+          "dateModified": "2025-01-05"
+        }
+      ]
+    }),
   },
 };
 

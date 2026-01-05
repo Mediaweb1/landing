@@ -7,10 +7,87 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "FAQ - Mediaweb",
-  description: "Frequently asked questions about Mediaweb - AI Portfolio Website Builder for Creators",
+  title: "Mediaweb FAQ – Portfolio Builder + Media Kit",
+  description: "Mediaweb FAQ: Answers to common questions about portfolio websites, media kits, AI features, pricing, and getting started with Mediaweb.",
   alternates: {
     canonical: "/faq",
+  },
+  openGraph: {
+    siteName: "Mediaweb",
+    type: "website",
+    title: "Mediaweb FAQ – Portfolio Builder + Media Kit",
+    description: "Mediaweb FAQ: Answers to common questions about portfolio websites, media kits, AI features, pricing, and getting started with Mediaweb.",
+    url: "https://mediaweb.app/faq",
+    images: [
+      {
+        url: "https://mediaweb.app/og/faq.png",
+        width: 1200,
+        height: 630,
+        alt: "Mediaweb – AI portfolio + media kit",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mediaweb FAQ – Portfolio Builder + Media Kit",
+    description: "Mediaweb FAQ: Answers to common questions about portfolio websites, media kits, AI features, pricing, and getting started with Mediaweb.",
+    images: ["https://mediaweb.app/og/faq.png"],
+  },
+  other: {
+    "application/ld+json": JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How does the AI assistant work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Simply describe what you want in plain English. Our AI assistant understands your vision and builds pages, sections, or entire websites in seconds. You can ask it to create a portfolio page, add a contact form, or redesign a section—it handles the technical work while you focus on your content."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use my own domain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! You can connect your own custom domain (like yourname.com) or use our free .mediaweb.app subdomain. Custom domain setup is straightforward, and we'll guide you through the process."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you have a free plan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We don't offer a free plan, but we do have a 30-day money-back guarantee—so you can try Mediaweb risk-free. Plus, our early bird special gives you 80% off ($10/month instead of $50/month) until December 31, 2025. Lock in this price forever as an early adopter."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need coding skills to use Mediaweb?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not at all. Mediaweb is built for creators, not developers. Use our AI assistant to build with simple descriptions, choose from 40+ designer templates, or customize with our visual editor. No code required."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the MediaKit feature work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Connect your social media accounts (Instagram, Facebook, YouTube, TikTok), and we automatically generate a professional MediaKit with your stats, demographics, and engagement metrics. It's perfect for pitching to brands and sponsors—all updated in real-time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to worry about hosting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Hosting is completely automatic and included. Your portfolio is hosted on our reliable infrastructure with automatic image optimization, global CDN delivery, and 99.9% uptime. You just create—we handle everything else."
+          }
+        }
+      ]
+    }),
   },
 };
 

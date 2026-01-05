@@ -156,7 +156,7 @@ const MediaKit = () => {
               </div>
               <Badge
                 variant="secondary"
-                className="bg-secondary-500/20 text-secondary-300 border-secondary-500/30"
+                className="py-1 px-2 bg-secondary-500/20 text-secondary-300 border-secondary-500/30"
               >
                 Mediakit
               </Badge>
@@ -201,29 +201,22 @@ const MediaKit = () => {
               </div>
               <Badge
                 variant="secondary"
-                className="bg-gradient-to-r from-primary-500/20 to-secondary-500/20 text-primary-300 border-primary-500/30"
+                className="py-1 px-2 bg-gradient-to-r from-primary-500/20 to-secondary-500/20 text-primary-300 border-primary-500/30"
               >
-                Information we collect
+                What goes into your mediakit
               </Badge>
             </div>
             <h3 className="text-3xl lg:text-4xl font-bold text-white mb-4">
               Craft the Perfect MediaKit
             </h3>
             <p className="text-gray-300 mb-6 leading-relaxed text-lg">
-              Our MediaKit goes beyond basic information to offer a deep dive
-              into your brand's unique value. It includes key performance
-              metrics like follower count, engagement rates, and growth
-              statistics as well as detailed demographic insights such as age
-              distribution, gender breakdown, and geographic location of your
-              audience, providing a clear picture of who engages with your
-              content.
+              Your mediakit can include profile details such as your follower
+              count, engagement metrics and audience demographics like age,
+              gender, country and city distributions. Mediaweb can pull public
+              profile information from your connected social accounts to
+              automatically generate and update your mediakit with accurate,
+              up-to-date details.
             </p>
-            <div className="text-base">
-              <span className="text-gray-400">See also </span>
-              <span className="text-primary-400 hover:text-primary-300 cursor-pointer transition-colors">
-                Information we collect
-              </span>
-            </div>
           </div>
           <div className="relative">
             <div className="relative h-[450px] md:h-[550px] bg-gradient-to-br from-slate-800/50 to-slate-700/50 rounded-2xl border border-primary-500/20 flex items-center justify-center">
@@ -250,7 +243,7 @@ const MediaKit = () => {
               </div>
               <Badge
                 variant="secondary"
-                className="bg-primary-500/20 text-primary-300 border-primary-500/30"
+                className="py-1 px-2 bg-primary-500/20 text-primary-300 border-primary-500/30"
               >
                 Connection process
               </Badge>
@@ -276,8 +269,8 @@ const MediaKit = () => {
                   2
                 </span>
                 <span className="text-base">
-                  Give Mediaweb the necessary permissions, so we can collect
-                  your information
+                  Grant Mediaweb access to pull your public profile data and
+                  keep your mediakit current
                 </span>
               </div>
             </div>

@@ -1,9 +1,10 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import { PostHogProvider } from "./post-hog";
+import { STRUCTURED_DATA } from "@/constants/structured-data";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -13,11 +14,14 @@ const inter = Inter({
 const baseUrl = "https://mediaweb.app";
 
 export const metadata: Metadata = {
-  title: "Mediaweb - AI Portfolio Website Builder for Creators",
-  description: "Create stunning portfolio websites in minutes with AI. Perfect for artists, creators, and influencers.",
+  title: "Mediaweb – AI Portfolio Website Builder + Media Kit for Creators",
+  description: "Mediaweb is an AI-powered portfolio website builder with automated media kit generation for UGC creators, content creators, influencers and anyone who needs an online portfolio website.",
   metadataBase: new URL(baseUrl),
   alternates: {
     canonical: "/",
+  },
+  other: {
+    "application/ld+json": JSON.stringify(STRUCTURED_DATA),
   },
 };
 

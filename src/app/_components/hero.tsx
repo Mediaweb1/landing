@@ -1,6 +1,5 @@
-import { Zap, Rocket, Gift, Check } from "lucide-react";
+import { Gift, Check } from "lucide-react";
 import Link from "next/link";
-import { Button } from "@mediaweb1/sdk/shadcn";
 
 const Hero = () => {
   return (
@@ -11,24 +10,26 @@ const Hero = () => {
           <Gift className="w-4 h-4 mr-2" />
           Early Bird Special: 80% Off Until Dec 31
         </div>
-        
+
         {/* Main Heading */}
-        <div className="text-4xl lg:text-6xl font-bold flex flex-col items-center mb-4">
-          <h1 className="text-white leading-tight">Portfolio Websites</h1>
+        <h1 className="text-4xl lg:text-6xl font-bold flex flex-col items-center mb-4">
+          <span className="text-white leading-tight">Portfolio Websites</span>
           <span className="bg-gradient-to-r from-primary-600 via-primary-300 to-secondary-400 bg-clip-text text-transparent">
             Simplified.
           </span>
-        </div>
+        </h1>
 
         {/* Subtitle */}
         <p className="text-xl lg:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
           Create stunning portfolios in minutes with our AI assistant—or take
-          full control yourself. Built for UGC creators, content creators, artists, and influencers.
+          full control yourself. Built for UGC creators, content creators,
+          artists, and influencers.
         </p>
 
         {/* Social Proof */}
         <p className="text-base text-gray-400 mb-12">
-          Join dozens of other early birds who've already launched their portfolios
+          Join dozens of other early birds who've already launched their
+          portfolios
         </p>
 
         {/* CTA Buttons */}

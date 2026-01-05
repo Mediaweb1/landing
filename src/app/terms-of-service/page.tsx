@@ -6,6 +6,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/terms-of-service",
   },
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 const TermsOfService = () => {

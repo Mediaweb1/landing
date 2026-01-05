@@ -3,10 +3,52 @@ import { Mail, Send } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us - Mediaweb",
-  description: "Have a question or want to work together? Send us a message and we'll get back to you as soon as possible.",
+  title: "Contact Mediaweb",
+  description: "Questions about Mediaweb? Contact us for support, partnerships, or product questions.",
   alternates: {
     canonical: "/contact",
+  },
+  openGraph: {
+    siteName: "Mediaweb",
+    type: "website",
+    title: "Contact Mediaweb",
+    description: "Questions about Mediaweb? Contact us for support, partnerships, or product questions.",
+    url: "https://mediaweb.app/contact",
+    images: [
+      {
+        url: "https://mediaweb.app/og/contact.png",
+        width: 1200,
+        height: 630,
+        alt: "Mediaweb – AI portfolio + media kit",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Mediaweb",
+    description: "Questions about Mediaweb? Contact us for support, partnerships, or product questions.",
+    images: ["https://mediaweb.app/og/contact.png"],
+  },
+  other: {
+    "application/ld+json": JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Mediaweb",
+      "url": "https://mediaweb.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mediaweb.app/logo.svg",
+        "width": 100,
+        "height": 100
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "",
+        "contactType": "customer service",
+        "email": "support@mediaweb.app",
+        "availableLanguage": "English"
+      }
+    }),
   },
 };
 

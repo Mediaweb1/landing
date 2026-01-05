@@ -2,10 +2,76 @@ import PricingPlans from "./pricing-plans";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pricing - Mediaweb",
-  description: "Simple, transparent pricing for creators. Get 80% off with our early bird special - $10/month instead of $50/month.",
+  title: "Mediaweb Pricing – Plans for Creator Portfolios + Media Kit",
+  description: "Mediaweb pricing plans for creator portfolios and media kits. Build stunning websites with AI assistance and automated social analytics.",
   alternates: {
     canonical: "/pricing",
+  },
+  openGraph: {
+    siteName: "Mediaweb",
+    type: "website",
+    title: "Mediaweb Pricing – Plans for Creator Portfolios + Media Kit",
+    description: "Mediaweb pricing plans for creator portfolios and media kits. Build stunning websites with AI assistance and automated social analytics.",
+    url: "https://mediaweb.app/pricing",
+    images: [
+      {
+        url: "https://mediaweb.app/og/pricing.png",
+        width: 1200,
+        height: 630,
+        alt: "Mediaweb – AI portfolio + media kit",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mediaweb Pricing – Plans for Creator Portfolios + Media Kit",
+    description: "Mediaweb pricing plans for creator portfolios and media kits. Build stunning websites with AI assistance and automated social analytics.",
+    images: ["https://mediaweb.app/og/pricing.png"],
+  },
+  other: {
+    "application/ld+json": JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://mediaweb.app/pricing#softwareapplication",
+          "name": "Mediaweb",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "url": "https://mediaweb.app/",
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "Beta Plan",
+              "price": "10",
+              "priceCurrency": "USD",
+              "priceValidUntil": "2025-12-31",
+              "description": "Beta plan - 3 websites, 10 pages per website, 3GB storage, 3 custom domains"
+            }
+          ],
+          "publisher": {
+            "@id": "https://mediaweb.app/#organization"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://mediaweb.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Pricing",
+              "item": "https://mediaweb.app/pricing"
+            }
+          ]
+        }
+      ]
+    }),
   },
 };
 

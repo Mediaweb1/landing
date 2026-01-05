@@ -3,10 +3,76 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Mediaweb vs MediaKits.io - Complete Portfolio vs MediaKit Only",
-  description: "MediaKits.io is great for mediakits. But what if you need a complete portfolio website too? That's where Mediaweb shines—you get everything in one platform.",
+  title: "Mediaweb vs MediaKits.io – Portfolio Website + Media Kit",
+  description: "Compare Mediaweb and MediaKits.io for media kits, portfolio websites, automation, and customization. Mediaweb gives you both in one platform.",
   alternates: {
     canonical: "/compare/mediakits-io",
+  },
+  openGraph: {
+    siteName: "Mediaweb",
+    type: "website",
+    title: "Mediaweb vs MediaKits.io – Portfolio Website + Media Kit",
+    description: "Compare Mediaweb and MediaKits.io for media kits, portfolio websites, automation, and customization. Mediaweb gives you both in one platform.",
+    url: "https://mediaweb.app/compare/mediakits-io",
+    images: [
+      {
+        url: "https://mediaweb.app/og/compare-mediakits-io.png",
+        width: 1200,
+        height: 630,
+        alt: "Mediaweb – AI portfolio + media kit",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mediaweb vs MediaKits.io – Portfolio Website + Media Kit",
+    description: "Compare Mediaweb and MediaKits.io for media kits, portfolio websites, automation, and customization. Mediaweb gives you both in one platform.",
+    images: ["https://mediaweb.app/og/compare-mediakits-io.png"],
+  },
+  other: {
+    "application/ld+json": JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://mediaweb.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Compare",
+              "item": "https://mediaweb.app/compare"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Mediaweb vs MediaKits.io",
+              "item": "https://mediaweb.app/compare/mediakits-io"
+            }
+          ]
+        },
+        {
+          "@type": "Article",
+          "headline": "Mediaweb vs MediaKits.io – Portfolio Website + Media Kit",
+          "description": "Compare Mediaweb and MediaKits.io for media kits, portfolio websites, automation, and customization. Mediaweb gives you both in one platform.",
+          "author": {
+            "@type": "Organization",
+            "name": "Mediaweb"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Mediaweb"
+          },
+          "datePublished": "2025-01-05",
+          "dateModified": "2025-01-05"
+        }
+      ]
+    }),
   },
 };
 
