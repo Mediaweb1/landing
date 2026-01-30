@@ -45,7 +45,7 @@ export const metadata: Metadata = {
               "name": "Beta Plan",
               "price": "10",
               "priceCurrency": "USD",
-              "priceValidUntil": "2025-12-31",
+              "priceValidUntil": "2026-03-01",
               "description": "Beta plan - 3 websites, 10 pages per website, 3GB storage, 3 custom domains"
             }
           ],

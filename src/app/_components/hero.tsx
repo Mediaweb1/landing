@@ -8,7 +8,7 @@ const Hero = () => {
         {/* Badge */}
         <div className="inline-flex items-center rounded-full border px-3 py-1.5 text-sm font-semibold mb-8 bg-gradient-to-r from-orange-500/20 to-red-500/20 text-orange-200 border-orange-500/30 backdrop-blur-xs">
           <Gift className="w-4 h-4 mr-2" />
-          Early Bird Special: 80% Off Until Dec 31
+          Early Bird Special: 80% Off Until March 1
         </div>
 
         {/* Main Heading */}
@@ -52,7 +52,7 @@ const Hero = () => {
         {/* Discount Details */}
         <div className="mb-16">
           <p className="text-orange-400 font-semibold text-base mb-1">
-            🔥 $10/mo instead of $50/mo — Lock in forever before Dec 31
+            🔥 $10/mo instead of $50/mo — Lock in forever before March 1
           </p>
           <p className="text-gray-500 text-sm">
             Limited early bird spots available
@@ -67,7 +67,7 @@ const Hero = () => {
           </div>
           <div className="flex items-center space-x-2">
             <Check className="w-4 h-4 text-orange-400" />
-            <span>Offer ends December 31, 2025</span>
+            <span>Offer ends March 1, 2026</span>
           </div>
           <div className="flex items-center space-x-2">
             <Check className="w-4 h-4 text-primary-400" />

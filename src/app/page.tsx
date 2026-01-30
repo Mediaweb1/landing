@@ -76,13 +76,13 @@ export const metadata: Metadata = {
           "applicationCategory": "BusinessApplication",
           "operatingSystem": "Web",
           "url": "https://mediaweb.app/",
-          "offers": {
-            "@type": "Offer",
-            "price": "10",
-            "priceCurrency": "USD",
-            "priceValidUntil": "2025-12-31",
-            "description": "Beta plan - 3 websites, 10 pages per website, 3GB storage, 3 custom domains"
-          },
+        "offers": {
+          "@type": "Offer",
+          "price": "10",
+          "priceCurrency": "USD",
+          "priceValidUntil": "2026-03-01",
+          "description": "Beta plan - 3 websites, 10 pages per website, 3GB storage, 3 custom domains"
+        },
           "publisher": {
             "@id": "https://mediaweb.app/#organization"
           }
@@ -112,7 +112,7 @@ const Landing = () => {
         <Hero />
         <VideoSection />
         <Features />
-        <AIAssistant />
+        {/* <AIAssistant /> */}
         <Sandbox />
         <MediaKit />
         <CustomDomains />

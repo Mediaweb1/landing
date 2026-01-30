@@ -17,7 +17,7 @@ const VideoSection = () => {
         <div className="w-full flex flex-col border-2 border-border bg-muted p-1 rounded-3xl shadow-2xl transform transition-all duration-500 hover:scale-105">
           <div className="w-full bg-background rounded-[16px]">
 
-            <div className="w-full rounded-t-2xl bg-primary h-10 px-3 flex justify-between">
+            <div className="w-full rounded-t-2xl bg-primary-800/60 border border-primary-900 text-primary-foreground shadow-sm h-10 px-3 flex justify-between">
               <div className="w-1/4 h-full flex md:space-x-6 items-center">
                 <div className="h-full hidden md:flex space-x-1.5 md:space-x-2 items-center">
                   <span className="w-2 h-2 md:w-3 md:h-3 rounded-[50%] bg-red-500" />
