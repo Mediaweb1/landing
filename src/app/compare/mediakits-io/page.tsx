@@ -161,7 +161,7 @@ export default function MediakitsIOComparison() {
                       <h3 className="text-white font-semibold mb-1">Automated Social Stats</h3>
                       <p className="text-gray-300">
                         Connect Instagram, Facebook, YouTube, and TikTok. We automatically pull your stats, demographics, and engagement metrics. 
-                        Real-time updates, just like MediaKits.io. (We even support Facebook, which they don't.)
+                        Stats sync automatically, just like MediaKits.io. (We even support Facebook, which they don't.)
                       </p>
                     </div>
                   </div>
@@ -315,7 +315,7 @@ export default function MediakitsIOComparison() {
                   MediaKits.io starts at <span className="text-pink-400 font-semibold">$9/month</span> for just a mediakit.
                 </p>
                 <p className="text-lg">
-                  Mediaweb is <span className="text-primary-400 font-semibold">$10/month</span> with our early bird discount (normally $50/month). 
+                  Mediaweb is <span className="line-through">$50/month</span> <span className="text-primary-400 font-semibold">$10/month</span> — Early Bird Discount (expires March 1). 
                   For basically the same price, you get a mediakit PLUS a full portfolio website, AI builder, 40+ templates, custom domain, and image optimization.
                 </p>
                 <p className="text-lg">

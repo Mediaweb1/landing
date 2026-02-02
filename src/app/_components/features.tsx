@@ -1,44 +1,20 @@
 import { Card } from "@mediaweb1/sdk/shadcn";
 import {
   Globe,
-  Palette,
+  Rocket,
   Brush,
   Bot,
   BarChart3,
   HardDrive,
-  ExternalLink,
-  ArrowRight,
 } from "lucide-react";
 
 const FeatureRundown = () => {
   const features = [
     {
-      icon: Globe,
-      title: "Custom Domains",
-      description: "Launch on your own domain or use our free .mediaweb.app subdomain.",
-      gradient: "from-blue-500 to-blue-600",
-      jumpTo: "custom-domains",
-    },
-    {
-      icon: Palette,
-      title: "Designer Templates",
-      description:
-        "40+ pixel-perfect layouts for creators, quickly switchable.",
-      gradient: "from-purple-500 to-purple-600",
-      jumpTo: "designer-templates",
-    },
-    {
-      icon: Brush,
-      title: "Theme Studio",
-      description:
-        "One-click palettes & typography presets, fully brand-ready.",
-      gradient: "from-pink-500 to-pink-600",
-      jumpTo: "theme-studio",
-    },
-    {
       icon: Bot,
-      title: "AI Assistant",
-      description: "Describe your vision; we assemble pages in seconds.",
+      title: "AI Agent",
+      description:
+        "Just tell it what you want. No coding, no design skills—it builds while you watch.",
       gradient: "from-primary-500 to-primary-600",
       jumpTo: "ease-of-use",
     },
@@ -46,14 +22,39 @@ const FeatureRundown = () => {
       icon: BarChart3,
       title: "Mediakit Built-in",
       description:
-        "Monetize faster with auto-generated stats & brand deals deck.",
+        "Impress brands with verified stats from Instagram, TikTok, YouTube & Facebook.",
       gradient: "from-secondary-500 to-secondary-600",
       jumpTo: "mediakit",
     },
     {
+      icon: Globe,
+      title: "Custom Domains",
+      description:
+        "Look professional with your own domain or start free with a .mediaweb.app link.",
+      gradient: "from-blue-500 to-blue-600",
+      jumpTo: "custom-domains",
+    },
+    {
+      icon: Rocket,
+      title: "One-Click Publish",
+      description:
+        "Hit publish and you're live. No servers, no settings, no headaches.",
+      gradient: "from-purple-500 to-purple-600",
+      jumpTo: "hosting",
+    },
+    {
+      icon: Brush,
+      title: "Theme Studio",
+      description:
+        "Match your Instagram aesthetic in one click. Colors, fonts, the whole vibe.",
+      gradient: "from-pink-500 to-pink-600",
+      jumpTo: "theme-studio",
+    },
+    {
       icon: HardDrive,
       title: "Image Optimization",
-      description: "Lightning-fast photo loading with automatic optimization.",
+      description:
+        "Photos compressed up to 96%—without losing quality. Making your site load fast.",
       gradient: "from-green-500 to-green-600",
       jumpTo: "image-optimization",
     },
@@ -71,15 +72,16 @@ const FeatureRundown = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-6">
-            All features included natively. No plugins to manage, no hidden costs, no complexity.
+            All features included natively. No plugins to manage, no hidden
+            costs, no complexity.
           </p>
-          <a
+          {/*      <a
             href="#"
             className="inline-flex items-center text-primary-400 hover:text-primary-300 transition-colors text-sm font-medium"
           >
             Compare us
             <ExternalLink className="ml-1 w-4 h-4" />
-          </a>
+          </a> */}
         </div>
 
         {/* Features Grid */}

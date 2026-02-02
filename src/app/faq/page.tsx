@@ -59,7 +59,7 @@ export const metadata: Metadata = {
           "name": "Do you have a free plan?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We don't offer a free plan, but we do have a 30-day money-back guarantee—so you can try Mediaweb risk-free. Plus, our early bird special gives you 80% off ($10/month instead of $50/month) until December 31, 2025. Lock in this price forever as an early adopter."
+            "text": "We don't offer a free plan, but we do have a 30-day money-back guarantee—so you can try Mediaweb risk-free. Plus, our Early Bird Discount gives you $10/month instead of $50/month. Expires March 1, 2026. Lock in this price forever as an early adopter."
           }
         },
         {
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
           "name": "How does the MediaKit feature work?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Connect your social media accounts (Instagram, Facebook, YouTube, TikTok), and we automatically generate a professional MediaKit with your stats, demographics, and engagement metrics. It's perfect for pitching to brands and sponsors—all updated in real-time."
+            "text": "Connect your social media accounts (Instagram, Facebook, YouTube, TikTok), and we automatically generate a professional MediaKit with your stats, demographics, and engagement metrics. It's perfect for pitching to brands and sponsors—stats sync daily to stay current."
           }
         },
         {
@@ -107,7 +107,7 @@ const faqs = [
   {
     question: "Do you have a free plan?",
     answer:
-      "We don't offer a free plan, but we do have a 30-day money-back guarantee—so you can try Mediaweb risk-free. Plus, our early bird special gives you 80% off ($10/month instead of $50/month) until December 31, 2025. Lock in this price forever as an early adopter.",
+      "We don't offer a free plan, but we do have a 30-day money-back guarantee—so you can try Mediaweb risk-free. Plus, our Early Bird Discount gives you $10/month instead of $50/month. Expires March 1, 2026. Lock in this price forever as an early adopter.",
     featured: true,
   },
   {
@@ -119,7 +119,7 @@ const faqs = [
   {
     question: "How does the MediaKit feature work?",
     answer:
-      "Connect your social media accounts (Instagram, Facebook, YouTube, TikTok), and we automatically generate a professional MediaKit with your stats, demographics, and engagement metrics. It's perfect for pitching to brands and sponsors—all updated in real-time.",
+      "Connect your social media accounts (Instagram, Facebook, YouTube, TikTok), and we automatically generate a professional MediaKit with your stats, demographics, and engagement metrics. It's perfect for pitching to brands and sponsors—stats sync daily to stay current.",
     featured: true,
   },
   {

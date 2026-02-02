@@ -35,7 +35,7 @@ const Sandbox = () => {
             <h3 className="text-2xl font-bold text-white mb-8 text-center">
               Powerful Tools at Your Fingertips
             </h3>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mx-auto">
               <Card className="p-6 group relative overflow-hidden bg-gradient-to-br from-slate-900 to-slate-800 border-slate-600 backdrop-blur-xs hover:border-primary-500/50 transition-all duration-500 shadow-lg hover:shadow-2xl hover:-translate-y-1 rounded-2xl cursor-pointer">
                 {/* Background Glow Effect */}
                 <div className="absolute -inset-px bg-gradient-to-r from-primary-500/10 to-secondary-500/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
@@ -66,8 +66,8 @@ const Sandbox = () => {
                 </p>
               </Card>
 
-              <Card className="p-6 group relative overflow-hidden bg-gradient-to-br from-slate-900 to-slate-800 border-slate-600 backdrop-blur-xs hover:border-primary-500/50 transition-all duration-500 shadow-lg hover:shadow-2xl hover:-translate-y-1 rounded-2xl cursor-pointer">
-                {/* Background Glow Effect */}
+              {/*     <Card className="p-6 group relative overflow-hidden bg-gradient-to-br from-slate-900 to-slate-800 border-slate-600 backdrop-blur-xs hover:border-primary-500/50 transition-all duration-500 shadow-lg hover:shadow-2xl hover:-translate-y-1 rounded-2xl cursor-pointer">
+                
                 <div className="absolute -inset-px bg-gradient-to-r from-primary-500/10 to-secondary-500/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
 
                 <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
@@ -79,13 +79,13 @@ const Sandbox = () => {
                 <p className="text-gray-400 text-sm group-hover:text-white transition-colors">
                   SEO, analytics, and custom code
                 </p>
-              </Card>
+              </Card> */}
 
               <Card className="p-6 group relative overflow-hidden bg-gradient-to-br from-slate-900 to-slate-800 border-slate-600 backdrop-blur-xs hover:border-primary-500/50 transition-all duration-500 shadow-lg hover:shadow-2xl hover:-translate-y-1 rounded-2xl cursor-pointer">
                 {/* Background Glow Effect */}
-                <div className="absolute -inset-px bg-gradient-to-r from-primary-500/10 to-secondary-500/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
+                <div className="absolute -inset-px bg-gradient-to-r from-primary-500/10 to-primary-500/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
 
-                <div className="w-12 h-12 bg-gradient-to-r from-secondary-500 to-secondary-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <div className="w-12 h-12 bg-gradient-to-r from-primary-500 to-primary-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                   <Zap className="w-6 h-6 text-white" />
                 </div>
                 <h4 className="text-white font-semibold mb-2 group-hover:text-primary-300 transition-colors">

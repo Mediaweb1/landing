@@ -162,14 +162,13 @@ const MediaKit = () => {
               </Badge>
             </div>
             <h3 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-              Elevate Your Brand with a Professional MediaKit
+              Your Stats. Ready to Send.
             </h3>
             <p className="text-gray-300 mb-6 leading-relaxed text-lg">
-              Elevate your brand's visibility and appeal with our comprehensive
-              MediaKit. Designed to provide a professional and polished
-              presentation of your brand's social media analytics, our MediaKit
-              helps you make a compelling case for collaboration and
-              sponsorship.
+              Brands want numbers. Followers, engagement, demographics—the
+              works. We pull it all from your socials and package it
+              beautifully. No spreadsheets, no screenshots. Just a clean link
+              you can send in seconds.
             </p>
             <Button className="bg-gradient-to-r from-secondary-500 to-secondary-600 hover:from-secondary-600 hover:to-secondary-700 text-white px-8 py-3 text-lg">
               Learn more
@@ -203,19 +202,17 @@ const MediaKit = () => {
                 variant="secondary"
                 className="py-1 px-2 bg-gradient-to-r from-primary-500/20 to-secondary-500/20 text-primary-300 border-primary-500/30"
               >
-                What goes into your mediakit
+                What's included
               </Badge>
             </div>
             <h3 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-              Craft the Perfect MediaKit
+              Always Up-to-Date. Always Accurate.
             </h3>
             <p className="text-gray-300 mb-6 leading-relaxed text-lg">
-              Your mediakit can include profile details such as your follower
-              count, engagement metrics and audience demographics like age,
-              gender, country and city distributions. Mediaweb can pull public
-              profile information from your connected social accounts to
-              automatically generate and update your mediakit with accurate,
-              up-to-date details.
+              Follower counts, engagement rates, audience age, gender,
+              location—all pulled directly from Instagram, TikTok, YouTube, and
+              Facebook. Your stats update automatically, so your mediakit is
+              never out of date.
             </p>
           </div>
           <div className="relative">

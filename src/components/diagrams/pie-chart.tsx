@@ -73,13 +73,13 @@ const PieChart = ({
         case 2:
           return "fill-primary-700";
         case 3:
-          return "fill-primary-quaternary";
+          return "fill-primary-400";
         case 4:
-          return "fill-primary-quinary";
+          return "fill-primary-600";
         case 5:
-          return "fill-primary-senary";
+          return "fill-primary-800";
         default:
-          return "fill-primary-primary";
+          return "fill-primary-400";
       }
     }
   };
@@ -107,19 +107,19 @@ const PieChart = ({
       // Use primary color palette
       switch (index % 6) {
         case 0:
-          return "bg-primary-primary";
+          return "bg-primary-400";
         case 1:
-          return "bg-primary-secondary";
+          return "bg-primary-500";
         case 2:
-          return "bg-primary-tertiary";
+          return "bg-primary-600";
         case 3:
-          return "bg-primary-quaternary";
+          return "bg-primary-300";
         case 4:
-          return "bg-primary-quinary";
+          return "bg-primary-700";
         case 5:
-          return "bg-primary-senary";
+          return "bg-primary-800";
         default:
-          return "bg-primary-primary";
+          return "bg-primary-400";
       }
     }
   };

@@ -87,18 +87,18 @@ const BarChart = ({
                 <div
                   className={`w-full animate-grow rounded-t ${
                     index % 6 === 0
-                      ? "bg-primary-primary"
+                      ? "bg-primary-400"
                       : index % 6 === 1
-                      ? "bg-primary-secondary"
+                      ? "bg-primary-500"
                       : index % 6 === 2
-                      ? "bg-primary-tertiary"
+                      ? "bg-primary-600"
                       : index % 6 === 3
-                      ? "bg-primary-quaternary"
+                      ? "bg-primary-300"
                       : index % 6 === 4
-                      ? "bg-primary-quinary"
+                      ? "bg-primary-700"
                       : index % 6 === 5
-                      ? "bg-primary-senary"
-                      : "bg-primary-primary" // Loop back to primary for the 7th and beyond
+                      ? "bg-primary-800"
+                      : "bg-primary-400"
                   }`}
                   style={{ height: `${height}%`, maxHeight: `${height}%` }}
                 ></div>

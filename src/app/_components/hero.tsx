@@ -52,7 +52,7 @@ const Hero = () => {
         {/* Discount Details */}
         <div className="mb-16">
           <p className="text-orange-400 font-semibold text-base mb-1">
-            🔥 $10/mo instead of $50/mo — Lock in forever before March 1
+            🔥 <span className="line-through">$50/mo</span> → $10/mo — Early Bird Discount. Expires March 1
           </p>
           <p className="text-gray-500 text-sm">
             Limited early bird spots available
@@ -71,7 +71,7 @@ const Hero = () => {
           </div>
           <div className="flex items-center space-x-2">
             <Check className="w-4 h-4 text-primary-400" />
-            <span>Lock in $10/mo pricing forever</span>
+            <span>Lock in $10/mo Early Bird pricing</span>
           </div>
         </div>
       </div>
