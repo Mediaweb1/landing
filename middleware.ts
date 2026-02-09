@@ -23,12 +23,12 @@ export function middleware(req: NextRequest) {
       path: "/",
       maxAge: 60 * 60 * 24 * 90, // 90 days
       httpOnly: false,
-      secure: process.env.NODE_ENV === 'production',
+      secure: process.env.NEXT_PUBLIC_NODE_ENV === 'production',
       sameSite: 'lax',
     };
     
     // Set domain for production (cross-subdomain cookies)
-    if (process.env.NODE_ENV === 'production') {
+    if (process.env.NEXT_PUBLIC_NODE_ENV === 'production') {
       cookieOptions.domain = '.mediaweb.app';
     }
     
@@ -41,12 +41,12 @@ export function middleware(req: NextRequest) {
       path: "/",
       maxAge: 60 * 60 * 24 * 30, // 30 days
       httpOnly: false,
-      secure: process.env.NODE_ENV === 'production',
+      secure: process.env.NEXT_PUBLIC_NODE_ENV === 'production',
       sameSite: 'lax'
     };
     
     // Set domain for production (cross-subdomain cookies)
-    if (process.env.NODE_ENV === 'production') {
+    if (process.env.NEXT_PUBLIC_NODE_ENV === 'production') {
       cookieOptions.domain = '.mediaweb.app';
     }
     

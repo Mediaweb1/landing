@@ -120,7 +120,7 @@ const Sandbox = () => {
                         Experience the full builder yourself
                       </p>
                     </div>
-                    <Link href="https://dashboard.mediaweb.app/editor/sandbox">
+                    <Link href="https://editor.mediaweb.app/sandbox">
                       <Button
                         variant="outline"
                         className="border-white text-white hover:bg-white hover:text-slate-900"
