@@ -26,6 +26,19 @@
   --color-secondary-800: #6b21a8;
   --color-secondary-900: #581c87;
   --color-secondary-950: #3b0764;
+
+  --color-tertiary: #92400e;
+  --color-tertiary-50: #fffbeb;
+  --color-tertiary-100: #fef3c7;
+  --color-tertiary-200: #fde68a;
+  --color-tertiary-300: #fcd34d;
+  --color-tertiary-400: #fbbf24;
+  --color-tertiary-500: #f59e0b;
+  --color-tertiary-600: #d97706;
+  --color-tertiary-700: #b45309;
+  --color-tertiary-800: #92400e;
+  --color-tertiary-900: #78350f;
+  --color-tertiary-950: #451a03;
 }
 
 @layer base {
@@ -63,7 +76,10 @@
     --ring: 160 84% 39%;
     --secondary: 270 91% 27%;
     --secondary-foreground: 0 0% 98%;
-    
+
+    --tertiary: 28 80% 31%;
+    --tertiary-foreground: 0 0% 98%;
+
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
     
