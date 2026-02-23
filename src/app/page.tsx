@@ -78,10 +78,10 @@ export const metadata: Metadata = {
           "url": "https://mediaweb.app/",
         "offers": {
           "@type": "Offer",
-          "price": "10",
+          "price": "20",
           "priceCurrency": "USD",
           "priceValidUntil": "2026-03-01",
-          "description": "Beta plan - 3 websites, 10 pages per website, 3GB storage, 3 custom domains"
+          "description": "Creator - Pro plan - 3 websites, 10 pages per website, 3GB storage, 3 custom domains"
         },
           "publisher": {
             "@id": "https://mediaweb.app/#organization"

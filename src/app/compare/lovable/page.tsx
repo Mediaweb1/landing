@@ -390,11 +390,11 @@ export default function LovableComparison() {
                 <p className="text-lg">
                   Mediaweb is{" "}
                   <span className="text-primary-400 font-semibold">
-                    $10/month
+                    $20/month
                   </span>{" "}
                   with our early bird discount (normally $50/month). And you get
                   way more creator-specific features: MediaKit, social
-                  integrations, image optimization, and 40+ templates.
+                  integrations, image optimization, and custom themes.
                 </p>
                 <p className="text-lg">
                   Plus, we offer a 30-day money-back guarantee. Try it

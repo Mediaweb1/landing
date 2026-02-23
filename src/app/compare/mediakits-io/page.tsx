@@ -315,8 +315,8 @@ export default function MediakitsIOComparison() {
                   MediaKits.io starts at <span className="text-pink-400 font-semibold">$9/month</span> for just a mediakit.
                 </p>
                 <p className="text-lg">
-                  Mediaweb is <span className="line-through">$50/month</span> <span className="text-primary-400 font-semibold">$10/month</span> — Early Bird Discount (expires March 1). 
-                  For basically the same price, you get a mediakit PLUS a full portfolio website, AI builder, 40+ templates, custom domain, and image optimization.
+                  Mediaweb is <span className="line-through">$50/month</span> <span className="text-primary-400 font-semibold">$20/month</span> — Early Bird Discount (expires March 1).
+                  For a similar price, you get a mediakit PLUS a full portfolio website, AI builder, custom themes, custom domain, and image optimization.
                 </p>
                 <p className="text-lg">
                   Plus, we offer a 30-day money-back guarantee. Try it risk-free.

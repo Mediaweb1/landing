@@ -8,7 +8,7 @@ const Hero = () => {
         {/* Badge */}
         <div className="inline-flex items-center rounded-full border px-3 py-1.5 text-sm font-semibold mb-8 bg-gradient-to-r from-orange-500/20 to-red-500/20 text-orange-200 border-orange-500/30 backdrop-blur-xs">
           <Gift className="w-4 h-4 mr-2" />
-          Early Bird Special: 80% Off Until March 1
+          Early Bird Special: 60% Off Until March 1
         </div>
 
         {/* Main Heading */}
@@ -52,7 +52,7 @@ const Hero = () => {
         {/* Discount Details */}
         <div className="mb-16">
           <p className="text-orange-400 font-semibold text-base mb-1">
-            🔥 <span className="line-through">$50/mo</span> → $10/mo — Early Bird Discount. Expires March 1
+            🔥 <span className="line-through">$50/mo</span> → $20/mo — Early Bird Discount. Expires March 1
           </p>
           <p className="text-gray-500 text-sm">
             Limited early bird spots available
@@ -71,7 +71,7 @@ const Hero = () => {
           </div>
           <div className="flex items-center space-x-2">
             <Check className="w-4 h-4 text-primary-400" />
-            <span>Lock in $10/mo Early Bird pricing</span>
+            <span>Lock in $20/mo Early Bird pricing</span>
           </div>
         </div>
       </div>

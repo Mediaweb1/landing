@@ -42,11 +42,11 @@ export const metadata: Metadata = {
           "offers": [
             {
               "@type": "Offer",
-              "name": "Beta Plan",
-              "price": "10",
+              "name": "Creator - Pro",
+              "price": "20",
               "priceCurrency": "USD",
               "priceValidUntil": "2026-03-01",
-              "description": "Beta plan - 3 websites, 10 pages per website, 3GB storage, 3 custom domains"
+              "description": "Creator - Pro plan - 3 websites, 10 pages per website, 3GB storage, 3 custom domains"
             }
           ],
           "publisher": {
