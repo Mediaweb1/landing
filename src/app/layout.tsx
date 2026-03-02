@@ -5,6 +5,7 @@ import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import { PostHogProvider } from "./post-hog";
 import { TikTokPixel } from "@mediaweb1/sdk/tiktok-pixel";
+import { GoogleAdsPixel } from "@mediaweb1/sdk/google-ads";
 import { STRUCTURED_DATA } from "@/constants/structured-data";
 
 const inter = Inter({
@@ -36,6 +37,7 @@ export default function RootLayout({
       <body className={`${inter.variable} antialiased bg-slate-900`}>
         <PostHogProvider />
         <TikTokPixel />
+        <GoogleAdsPixel />
         <Header />
         <main className="min-h-screen">
           {children}
