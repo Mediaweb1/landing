@@ -103,7 +103,7 @@ const Sandbox = () => {
             <div className="relative group cursor-pointer w-full">
               <div className="relative overflow-hidden rounded-2xl shadow-2xl transform transition-all duration-500 group-hover:scale-105">
                 <img
-                  src="/images/website-builder.webp"
+                  src="/images/landing-page-video-cover.webp"
                   alt="Website Builder Sandbox"
                   className="w-full transition-all duration-500 group-hover:blur-sm"
                 />

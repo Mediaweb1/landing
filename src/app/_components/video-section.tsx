@@ -46,10 +46,11 @@ const VideoSection = () => {
             </div>
 
             <video
-              src="/videos/mediaweb-demo.mp4"
+              src="/videos/landing-page-video.mp4"
               autoPlay
               muted
               loop
+              poster="/images/landing-page-video-cover.webp"
               className="w-full h-auto rounded-b-2xl relative z-10 shadow-2xl shadow-white/10 drop-shadow-2xl"
               preload="metadata"
               style={{
