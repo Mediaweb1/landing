@@ -11,9 +11,11 @@ import Link from "next/link";
 import { Button } from "@mediaweb1/sdk/shadcn";
 import { Card } from "@mediaweb1/sdk/shadcn";
 
+const CDN_URL = process.env.R2_PUBLIC_URL;
+
 const Sandbox = () => {
   return (
-    <section className="relative px-6 py-16 min-h-screen flex items-center">
+    <section className="relative px-6 py-16 min-h-screen hidden md:flex items-center">
       <div className="max-w-7xl mx-auto w-full">
         <div className="space-y-16">
           <div className="text-center">
@@ -103,7 +105,7 @@ const Sandbox = () => {
             <div className="relative group cursor-pointer w-full">
               <div className="relative overflow-hidden rounded-2xl shadow-2xl transform transition-all duration-500 group-hover:scale-105">
                 <img
-                  src="/images/landing-page-video-cover.webp"
+                  src={`${CDN_URL}/mediaweb/landing-page-video-cover.webp`}
                   alt="Website Builder Sandbox"
                   className="w-full transition-all duration-500 group-hover:blur-sm"
                 />

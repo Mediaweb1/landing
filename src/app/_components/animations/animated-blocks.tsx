@@ -118,7 +118,7 @@ const AnimatedBlocks = ({ currentAnimation }: { currentAnimation: string }) => {
   return (
     <div
       className={cn(
-        "relative w-full max-w-full sm:max-w-[600px] max-h-[500px] h-full flex justify-center items-center",
+        "relative w-full max-w-full sm:max-w-[600px] max-h-[350px] md:max-h-[500px] h-full flex justify-center items-center",
         currentAnimation === selector ? "z-10" : "z-0"
       )}
       id="animation-container"

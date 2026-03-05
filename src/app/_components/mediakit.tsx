@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 
 import {
   BarChart3,
-  Users,
   Zap,
   TrendingUp,
   Wifi,
@@ -13,7 +12,6 @@ import {
   Download,
 } from "lucide-react";
 
-import AnimatedBlocks from "./animations/animated-blocks";
 import AnimatedMediakitGrid from "./animations/animated-mediakit-grid";
 import AnimatedConnectionProcess from "./animations/animated-connection-process";
 
@@ -22,7 +20,6 @@ import { Badge } from "@mediaweb1/sdk/shadcn";
 
 const MediaKit = () => {
   const [activeAnimations, setActiveAnimations] = useState({
-    intro: false,
     mediakit: false,
     connections: false,
   });
@@ -34,8 +31,6 @@ const MediaKit = () => {
           const isIntersecting = entry.isIntersecting;
 
           if (entry.target.id === "info-collection-section") {
-            setActiveAnimations((prev) => ({ ...prev, intro: isIntersecting }));
-          } else if (entry.target.id === "mediakit-section-1") {
             setActiveAnimations((prev) => ({
               ...prev,
               mediakit: isIntersecting,
@@ -52,22 +47,19 @@ const MediaKit = () => {
     );
 
     const connectionsSection = document.getElementById("connections-section");
-    const mediakitSection = document.getElementById("mediakit-section-1");
     const infoSection = document.getElementById("info-collection-section");
 
     if (connectionsSection) observer.observe(connectionsSection);
-    if (mediakitSection) observer.observe(mediakitSection);
     if (infoSection) observer.observe(infoSection);
 
     return () => {
       if (connectionsSection) observer.unobserve(connectionsSection);
-      if (mediakitSection) observer.unobserve(mediakitSection);
       if (infoSection) observer.unobserve(infoSection);
     };
   }, []);
 
   return (
-    <section id="mediakit" className="relative min-h-[300vh] overflow-hidden">
+    <section id="mediakit" className="relative min-h-[200vh] overflow-hidden">
       {/* Global Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"></div>
       <div className="absolute top-0 left-0 w-full h-full opacity-20">
@@ -88,7 +80,7 @@ const MediaKit = () => {
       </div>
 
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 right-32 bg-slate-800/80 backdrop-blur-xs border border-primary-500/30 rounded-lg p-3 animate-float">
+        <div className="absolute hidden md:flex top-20 right-32 bg-slate-800/80 backdrop-blur-xs border border-primary-500/30 rounded-lg p-3 animate-float">
           <div className="flex items-center gap-2">
             <Wifi className="w-4 h-4 text-primary-400" />
             <span className="text-xs text-gray-300">Connected</span>
@@ -97,7 +89,7 @@ const MediaKit = () => {
         </div>
 
         <div
-          className="absolute top-1/3 left-16 bg-slate-800/80 backdrop-blur-xs border border-secondary-500/30 rounded-lg p-3 animate-float"
+          className="absolute hidden md:flex top-1/3 left-16 bg-slate-800/80 backdrop-blur-xs border border-secondary-500/30 rounded-lg p-3 animate-float"
           style={{ animationDelay: "1s" }}
         >
           <div className="flex items-center gap-2">
@@ -112,7 +104,7 @@ const MediaKit = () => {
         </div>
 
         <div
-          className="absolute top-2/3 right-24 bg-slate-800/80 backdrop-blur-xs border border-primary-500/30 rounded-lg p-3 animate-float"
+          className="absolute hidden md:flex top-2/3 right-24 bg-slate-800/80 backdrop-blur-xs border border-primary-500/30 rounded-lg p-3 animate-float"
           style={{ animationDelay: "2.5s" }}
         >
           <div className="flex items-center gap-2">
@@ -122,7 +114,7 @@ const MediaKit = () => {
         </div>
 
         <div
-          className="absolute bottom-32 left-32 bg-slate-800/80 backdrop-blur-xs border border-secondary-500/30 rounded-lg p-3 animate-float"
+          className="absolute hidden md:flex bottom-32 left-32 bg-slate-800/80 backdrop-blur-xs border border-secondary-500/30 rounded-lg p-3 animate-float"
           style={{ animationDelay: "1.5s" }}
         >
           <div className="flex items-center gap-2">
@@ -132,7 +124,7 @@ const MediaKit = () => {
         </div>
 
         <div
-          className="absolute bottom-1/4 right-40 bg-slate-800/80 backdrop-blur-xs border border-primary-500/30 rounded-lg p-3 animate-float"
+          className="absolute hidden md:flex bottom-1/4 right-40 bg-slate-800/80 backdrop-blur-xs border border-primary-500/30 rounded-lg p-3 animate-float"
           style={{ animationDelay: "3.5s" }}
         >
           <div className="flex items-center gap-2">
@@ -149,8 +141,8 @@ const MediaKit = () => {
       >
         <div className="inset-0 bg-gradient-to-r from-secondary-500/5 to-transparent"></div>
         <div className="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <div className="flex items-center gap-3 mb-6">
+          <div className="space-y-6 lg:text-left">
+            <div className="flex items-center lg:justify-start gap-3 mb-6">
               <div className="w-12 h-12 bg-gradient-to-r from-secondary-500 to-secondary-600 rounded-lg flex items-center justify-center">
                 <BarChart3 className="w-6 h-6 text-white" />
               </div>
@@ -165,58 +157,15 @@ const MediaKit = () => {
               Your Stats. Ready to Send.
             </h3>
             <p className="text-gray-300 mb-6 leading-relaxed text-lg">
-              Brands want numbers. Followers, engagement, demographics—the
-              works. We pull it all from your socials and package it
-              beautifully. No spreadsheets, no screenshots. Just a clean link
-              you can send in seconds.
+              Brands want numbers. Followers, engagement, demographics. We pull it all from your socials and package it
+              beautifully. No spreadsheets, no screenshots. An inteactive mediakit directly in your portfolio
             </p>
             <Button className="bg-gradient-to-r from-secondary-500 to-secondary-600 hover:from-secondary-600 hover:to-secondary-700 text-white px-8 py-3 text-lg">
               Learn more
             </Button>
           </div>
-          <div className="relative">
-            <div className="relative h-[550px] bg-gradient-to-br from-slate-800/50 to-slate-700/50 rounded-2xl border border-secondary-500/20 flex items-center justify-center">
-              <AnimatedBlocks
-                currentAnimation={activeAnimations.intro ? "intro" : ""}
-              />
-
-              <div className="absolute top-6 left-6 w-4 h-4 bg-secondary-400 rounded-full animate-bounce"></div>
-              <div className="absolute bottom-6 right-6 w-3 h-3 bg-primary-400 rounded-full animate-pulse"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div
-        id="mediakit-section-1"
-        className="relative min-h-screen flex items-center p-6 lg:p-12"
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-primary-500/10 via-secondary-500/5 to-transparent"></div>
-        <div className="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-lg flex items-center justify-center">
-                <Users className="w-6 h-6 text-white" />
-              </div>
-              <Badge
-                variant="secondary"
-                className="py-1 px-2 bg-gradient-to-r from-primary-500/20 to-secondary-500/20 text-primary-300 border-primary-500/30"
-              >
-                What's included
-              </Badge>
-            </div>
-            <h3 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-              Always Up-to-Date. Always Accurate.
-            </h3>
-            <p className="text-gray-300 mb-6 leading-relaxed text-lg">
-              Follower counts, engagement rates, audience age, gender,
-              location—all pulled directly from Instagram, TikTok, YouTube, and
-              Facebook. Your stats update automatically, so your mediakit is
-              never out of date.
-            </p>
-          </div>
-          <div className="relative">
-            <div className="relative h-[450px] md:h-[550px] bg-gradient-to-br from-slate-800/50 to-slate-700/50 rounded-2xl border border-primary-500/20 flex items-center justify-center">
+          <div className="relative flex items-center">
+            <div className="relative w-full md:w-[600px] lg:w-full aspect-square bg-gradient-to-br from-slate-800/50 to-slate-700/50 rounded-2xl border border-secondary-500/20 flex items-center justify-center">
               {activeAnimations.mediakit && <AnimatedMediakitGrid />}
 
               <div className="absolute top-4 left-4 w-2 h-2 bg-primary-400 rounded-full animate-ping"></div>

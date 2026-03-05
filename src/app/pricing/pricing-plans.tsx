@@ -15,7 +15,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { LANDING_PAGE_PLANS } from "@mediaweb1/sdk/constants";
 
-const Pricing = () => {
+const Pricing = ({ showAICredits = false }: { showAICredits?: boolean }) => {
   const [interval, setInterval] = useState<"monthly" | "yearly">("monthly");
 
   return (
@@ -33,7 +33,7 @@ const Pricing = () => {
         <div className="text-center mb-16">
           <Badge
             variant="secondary"
-            className="bg-primary-500/20 text-primary-300 border-primary-500/30 mb-6"
+            className="bg-primary-500/20 text-primary-300 border-primary-500/30 mb-6 py-1 px-2"
           >
             <Rocket className="w-3 h-3 mr-1" />
             Early Bird Pricing
@@ -41,13 +41,13 @@ const Pricing = () => {
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
             Special{" "}
             <span className="bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">
-              Early Adopter
+              Early Bird
             </span>{" "}
             Pricing
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-            Get started with our exclusive beta pricing. Lock in this rate
-            forever as an early adopter.
+            Join now and lock in early bird pricing for life. The price you
+            see today is the price you keep—even after we raise it.
           </p>
         </div>
 
@@ -64,50 +64,30 @@ const Pricing = () => {
           ))}
         </div>
 
-        {/* Additional Info */}
-        <div className="text-center mb-16">
-          <p className="text-gray-400 mb-4">All plans include:</p>
-          <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-300">
-            <div className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-primary-400" />
-              <span>Custom domain support</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-primary-400" />
-              <span>24/7 support</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-primary-400" />
-              <span>SSL certificate</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-primary-400" />
-              <span>Analytics dashboard</span>
-            </div>
-          </div>
-        </div>
 
         {/* AI Credits Section */}
-        <div className="mb-16">
-          <div className="text-center max-w-3xl mx-auto">
-            <Badge
-              variant="secondary"
-              className="bg-secondary-500/20 text-secondary-300 border-secondary-500/30 mb-4"
-            >
-              <Zap className="w-3 h-3 mr-1" />
-              AI Credits
-            </Badge>
-            <h3 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-              3,000 AI Credits Included Monthly
-            </h3>
-            <p className="text-lg text-gray-300 mb-4">
-              Every plan comes with 3,000 AI credits per month — enough to build multiple pages and sections. We offer different AI models that consume credits at different rates, so you can choose between speed, quality, and cost.
-            </p>
-            <p className="text-sm text-gray-400">
-              Any usage beyond your monthly credits is automatically billed at affordable rates. You can track your credit usage in real-time from your dashboard.
-            </p>
+        {showAICredits && (
+          <div className="mb-16">
+            <div className="text-center max-w-3xl mx-auto">
+              <Badge
+                variant="secondary"
+                className="bg-secondary-500/20 text-secondary-300 border-secondary-500/30 mb-4"
+              >
+                <Zap className="w-3 h-3 mr-1" />
+                AI Credits
+              </Badge>
+              <h3 className="text-3xl lg:text-4xl font-bold text-white mb-4">
+                3,000 AI Credits Included Monthly
+              </h3>
+              <p className="text-lg text-gray-300 mb-4">
+                Every plan comes with 3,000 AI credits per month — enough to build multiple pages and sections. We offer different AI models that consume credits at different rates, so you can choose between speed, quality, and cost.
+              </p>
+              <p className="text-sm text-gray-400">
+                Any usage beyond your monthly credits is automatically billed at affordable rates. You can track your credit usage in real-time from your dashboard.
+              </p>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </section>
   );

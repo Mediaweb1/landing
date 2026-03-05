@@ -49,7 +49,7 @@ const BarChart = ({
     <div className="flex h-full items-start mb-5" id={id}>
       <div
         className={`${
-          viewport ? (isMobileView ? "h-52 " : "h-44") : "h-52 md:h-44"
+          viewport ? (isMobileView ? "h-60 " : "h-52") : "h-60 md:h-52"
         }  flex flex-col-reverse mr-3`}
       >
         {yAxisLabels.map((label, index) => (
@@ -70,7 +70,7 @@ const BarChart = ({
 
       <div
         className={`w-full ${
-          viewport ? (isMobileView ? "h-52 " : "h-44") : "h-52 md:h-44"
+          viewport ? (isMobileView ? "h-60 " : "h-52") : "h-60 md:h-52"
         }`}
       >
         <div

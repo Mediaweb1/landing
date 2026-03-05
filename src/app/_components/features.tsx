@@ -1,12 +1,5 @@
 import { Card } from "@mediaweb1/sdk/shadcn";
-import {
-  Globe,
-  Rocket,
-  Brush,
-  Bot,
-  BarChart3,
-  HardDrive,
-} from "lucide-react";
+import { Globe, Rocket, Brush, Bot, BarChart3, HardDrive } from "lucide-react";
 
 const FeatureRundown = () => {
   const features = [
@@ -14,49 +7,43 @@ const FeatureRundown = () => {
       icon: Bot,
       title: "AI Agent",
       description:
-        "Just tell it what you want. No coding, no design skills—it builds while you watch.",
+        "Describe your style, drop in your content, and let AI build your portfolio. No design or technical skills needed",
       gradient: "from-primary-500 to-primary-600",
-      jumpTo: "ease-of-use",
     },
     {
       icon: BarChart3,
-      title: "Mediakit Built-in",
+      title: "Mediakit",
       description:
         "Impress brands with verified stats from Instagram, TikTok, YouTube & Facebook.",
       gradient: "from-secondary-500 to-secondary-600",
-      jumpTo: "mediakit",
     },
     {
       icon: Globe,
       title: "Custom Domains",
       description:
         "Look professional with your own domain or start free with a .mediaweb.app link.",
+      gradient: "from-tertiary-500 to-tertiary-600",
+    },
+    {
+      icon: HardDrive,
+      title: "Free Hosting",
+      description:
+        "Hosting is included with every plan. Just click publish and your site is live—no servers or setup required.",
       gradient: "from-blue-500 to-blue-600",
-      jumpTo: "custom-domains",
     },
     {
       icon: Rocket,
       title: "One-Click Publish",
       description:
         "Hit publish and you're live. No servers, no settings, no headaches.",
-      gradient: "from-purple-500 to-purple-600",
-      jumpTo: "hosting",
+      gradient: "from-red-500 to-red-600",
     },
     {
       icon: Brush,
       title: "Theme Studio",
       description:
         "Match your Instagram aesthetic in one click. Colors, fonts, the whole vibe.",
-      gradient: "from-pink-500 to-pink-600",
-      jumpTo: "theme-studio",
-    },
-    {
-      icon: HardDrive,
-      title: "Image Optimization",
-      description:
-        "Photos compressed up to 96%—without losing quality. Making your site load fast.",
-      gradient: "from-green-500 to-green-600",
-      jumpTo: "image-optimization",
+      gradient: "from-yellow-300 to-yellow-400",
     },
   ];
 
@@ -85,37 +72,34 @@ const FeatureRundown = () => {
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
           {features.map((feature, index) => (
-            <a
-              href={`#${feature.jumpTo}`}
+            <div
               key={index}
-              className="h-auto p-0 bg-transparent hover:bg-transparent"
+              className={`${index >= 4 ? "hidden md:block" : ""}`}
             >
-              <Card className="w-full h-[240px] md:h-[280px] flex flex-col justify-between group relative overflow-hidden bg-gradient-to-br from-slate-900 to-slate-800 border-slate-600 backdrop-blur-xs p-4 md:p-8 hover:border-primary-500/50 transition-all duration-500 shadow-lg hover:shadow-2xl hover:-translate-y-1 rounded-2xl cursor-pointer">
-                {/* Background Glow Effect */}
-                <div className="absolute -inset-px bg-gradient-to-r from-primary-500/10 to-secondary-500/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
-
+              <Card className="w-full h-auto md:h-[280px] flex flex-row md:flex-col items-start md:justify-between group relative overflow-hidden bg-gradient-to-br from-slate-900 to-slate-800 border-slate-600 backdrop-blur-xs p-5 md:p-8 gap-4 md:gap-0 hover:border-primary-500/50 transition-all duration-500 shadow-lg hover:shadow-2xl hover:-translate-y-1 rounded-2xl">
                 {/* Icon */}
                 <div
-                  className={`w-10 min-h-10 h-10 md:w-16 md:min-h-16 md:h-16 bg-gradient-to-r ${feature.gradient} rounded-lg md:rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
+                  className={`w-12 min-w-12 h-12 md:w-16 md:min-h-16 md:h-16 bg-gradient-to-r ${feature.gradient} rounded-xl md:rounded-2xl flex items-center justify-center md:mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
                 >
                   <feature.icon className="h-6 w-6 md:w-8 md:h-8 text-white stroke-[1.5]" />
                 </div>
-                <h3 className="text-sm md:text-xl text-start font-semibold text-white mb-3 group-hover:text-primary-300 transition-colors">
-                  {feature.title}
-                </h3>
-                <p className="text-xs md:text-base text-gray-300 leading-relaxed group-hover:text-white transition-colors text-wrap text-start">
-                  {feature.description}
-                </p>
 
-                <div className="mt-auto flex items-start">
-                  <p className="text-start inline-flex items-center text-primary-400 hover:text-primary-300 transition-colors text-sm font-medium bg-transparent border-0 p-0 h-auto hover:bg-transparent">
-                    learn more
+                {/* Text content */}
+                <div className="flex flex-col flex-1 md:contents">
+                  <h3 className="text-base md:text-xl text-start font-semibold text-white mb-1 md:mb-3 group-hover:text-primary-300 transition-colors">
+                    {feature.title}
+                  </h3>
+                  <p className="text-sm md:text-base text-gray-400 leading-relaxed group-hover:text-white transition-colors text-start">
+                    {feature.description}
                   </p>
                 </div>
+
+                {/* Gradient accent line */}
+                <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${feature.gradient} opacity-50 group-hover:opacity-100 transition-opacity duration-300`}></div>
               </Card>
-            </a>
+            </div>
           ))}
         </div>
       </div>

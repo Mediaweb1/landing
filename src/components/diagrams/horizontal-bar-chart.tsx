@@ -60,14 +60,14 @@ const HorizontalBarChart = ({
   };
   
   return (
-    <div id={id} className="w-full flex flex-col space-y-6">
+    <div id={id} className="w-full flex flex-col space-y-12">
       {title && (
         <span className="text-card-foreground text-xl font-medium">
           {title}
         </span>
       )}
       
-      <div className="w-full flex flex-col space-y-6">
+      <div className="w-full flex flex-col space-y-12">
         <div className="flex flex-col space-y-3 w-full">
           {data.map((item, index) => {
             // Calculate percentage

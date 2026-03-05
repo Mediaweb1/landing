@@ -1,13 +1,8 @@
 import Hero from "./_components/hero";
 import VideoSection from "./_components/video-section";
 import Features from "./_components/features";
-import CustomDomains from "./_components/custom-domains";
 import MediaKit from "./_components/mediakit";
-import FileStorage from "./_components/file-storage";
-import Theme from "./_components/theme";
-import DesignerTemplates from "./_components/templates";
 import Sandbox from "./_components/sandbox";
-import AIAssistant from "./_components/AI-assistant";
 import PricingPlans from "./pricing/pricing-plans";
 import type { Metadata } from "next";
 
@@ -112,13 +107,8 @@ const Landing = () => {
         <Hero />
         <VideoSection />
         <Features />
-        {/* <AIAssistant /> */}
         <Sandbox />
         <MediaKit />
-        <CustomDomains />
-        <DesignerTemplates />
-        <Theme />
-        <FileStorage />
         <PricingPlans />
       </div>
     </div>

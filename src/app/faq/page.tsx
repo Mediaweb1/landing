@@ -59,7 +59,7 @@ export const metadata: Metadata = {
           "name": "Do you have a free plan?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We don't offer a free plan, but we do have a 30-day money-back guarantee—so you can try Mediaweb risk-free. Plus, our Early Bird Discount gives you $20/month instead of $50/month. Expires March 1, 2026. Lock in this price forever as an early adopter."
+            "text": "We don't offer a free plan, but we do have a 30-day money-back guarantee—so you can try Mediaweb risk-free. Plus, our Early Bird Discount gives you $20/month instead of $50/month. Expires April 1, 2026. Lock in this price forever as an early adopter."
           }
         },
         {
@@ -107,7 +107,7 @@ const faqs = [
   {
     question: "Do you have a free plan?",
     answer:
-      "We don't offer a free plan, but we do have a 30-day money-back guarantee—so you can try Mediaweb risk-free. Plus, our Early Bird Discount gives you $20/month instead of $50/month. Expires March 1, 2026. Lock in this price forever as an early adopter.",
+      "We don't offer a free plan, but we do have a 30-day money-back guarantee—so you can try Mediaweb risk-free. Plus, our Early Bird Discount gives you $20/month instead of $50/month. Expires April 1, 2026. Lock in this price forever as an early adopter.",
     featured: true,
   },
   {

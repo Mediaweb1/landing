@@ -10,9 +10,11 @@ import {
   Share,
 } from "lucide-react";
 
+const CDN_URL = process.env.R2_PUBLIC_URL;
+
 const VideoSection = () => {
   return (
-    <section id="video-section" className="relative px-6 py-16">
+    <section id="video-section" className="relative px-6 py-6 lg:py-16">
       <div className="w-full max-w-[1280px] mx-auto">
         <div className="w-full flex flex-col border-2 border-border bg-muted p-1 rounded-3xl shadow-2xl transform transition-all duration-500 hover:scale-105">
           <div className="w-full bg-background rounded-[16px]">
@@ -46,11 +48,11 @@ const VideoSection = () => {
             </div>
 
             <video
-              src="/videos/landing-page-video.mp4"
+              src={`${CDN_URL}/mediaweb/landing-page-video.mp4`}
               autoPlay
               muted
               loop
-              poster="/images/landing-page-video-cover.webp"
+              poster={`${CDN_URL}/mediaweb/landing-page-video-cover.webp`}
               className="w-full h-auto rounded-b-2xl relative z-10 shadow-2xl shadow-white/10 drop-shadow-2xl"
               preload="metadata"
               style={{

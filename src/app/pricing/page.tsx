@@ -95,7 +95,7 @@ const PricingPage = () => {
 
       {/* Content */}
       <div className="relative z-10">
-        <PricingPlans />
+        <PricingPlans showAICredits />
       </div>
     </div>
   );
