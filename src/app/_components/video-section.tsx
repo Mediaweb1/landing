@@ -48,11 +48,11 @@ const VideoSection = () => {
             </div>
 
             <video
-              src={`${CDN_URL}/mediaweb/landing-page-video.mp4`}
+              src={`${CDN_URL}/mediaweb/landing-page-video-2.mp4`}
               autoPlay
               muted
               loop
-              poster={`${CDN_URL}/mediaweb/landing-page-video-cover.webp`}
+              poster={`${CDN_URL}/mediaweb/landing-page-video-2-cover.webp`}
               className="w-full h-auto rounded-b-2xl relative z-10 shadow-2xl shadow-white/10 drop-shadow-2xl"
               preload="metadata"
               style={{
