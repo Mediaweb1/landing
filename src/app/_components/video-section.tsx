@@ -52,9 +52,9 @@ const VideoSection = () => {
               autoPlay
               muted
               loop
+              playsInline
               poster={`${CDN_URL}/mediaweb/landing-page-video-2-cover.webp`}
               className="w-full h-auto rounded-b-2xl relative z-10 shadow-2xl shadow-white/10 drop-shadow-2xl"
-              preload="metadata"
               style={{
                 filter:
                   "drop-shadow(0 25px 50px rgba(255, 255, 255, 0.08)) drop-shadow(0 0 30px rgba(59, 130, 246, 0.15))",
