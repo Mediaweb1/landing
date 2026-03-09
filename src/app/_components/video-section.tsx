@@ -39,9 +39,9 @@ const VideoSection = ({ cdnUrl }: { cdnUrl: string }) => {
   const handlePlayClick = () => {
     const video = videoRef.current;
     if (!video) return;
-    video.play().then(() => {
-      setShowPlayButton(false);
-    }).catch(() => {});
+    video.muted = true;
+    video.play().catch(() => {});
+    setShowPlayButton(false);
   };
 
   return (
