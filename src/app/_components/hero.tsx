@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="relative px-6 pt-20 lg:pt-32">
+    <section className="relative px-6 pt-32">
       <div className="max-w-7xl mx-auto text-center">
         {/* Badge */}
         <div className="inline-flex items-center rounded-full border px-3 py-1.5 text-sm font-semibold mb-8 bg-gradient-to-r from-orange-500/20 to-red-500/20 text-orange-200 border-orange-500/30 backdrop-blur-xs">
@@ -20,19 +20,9 @@ const Hero = () => {
         </h1>
 
         {/* Subtitle */}
-        <p className="hidden md:block text-xl lg:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
-          Create stunning portfolios in minutes with our AI assistant—or take
-          full control yourself. Built for UGC creators, content creators,
-          artists, and influencers.
-        </p>
-        <p className="block md:hidden text-lg text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
-          Create stunning portfolios in minutes. Built for creators and influencers.
-        </p>
-
-        {/* Social Proof */}
-        <p className="hidden md:block text-base text-gray-400 mb-12">
-          Join dozens of other early birds who've already launched their
-          portfolios
+        <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-gray-300 mb-8 max-w-5xl mx-auto leading-relaxed">
+          Your portfolio, mediakit, and social feed all in one place, built by AI. Perfect for UGC Creators, Content
+          Creators, Freelancers and anyone who needs a portfolio website.
         </p>
 
         {/* CTA Buttons */}
@@ -55,7 +45,8 @@ const Hero = () => {
         {/* Discount Details */}
         <div className="mb-16 hidden lg:block">
           <p className="text-orange-400 font-semibold text-base mb-1">
-            🔥 <span className="line-through">$50/mo</span> → $20/mo — Early Bird Discount. Expires April 1
+            🔥 <span className="line-through">$50/mo</span> → $20/mo — Early
+            Bird Discount. Expires April 1
           </p>
           <p className="text-gray-500 text-sm">
             Limited early bird spots available

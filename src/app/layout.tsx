@@ -17,7 +17,7 @@ const baseUrl = "https://mediaweb.app";
 
 export const metadata: Metadata = {
   title: "Mediaweb – AI Portfolio Website Builder + Media Kit for Creators",
-  description: "Mediaweb is an AI-powered portfolio website builder with automated media kit generation for UGC creators, content creators, influencers and anyone who needs an online portfolio website.",
+  description: "Your portfolio, mediakit, and social feed all in one place, built by AI. Perfect for UGC Creators, Content Creators, Freelancers and anyone who needs a portfolio website.",
   metadataBase: new URL(baseUrl),
   alternates: {
     canonical: "/",

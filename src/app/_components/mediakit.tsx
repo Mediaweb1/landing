@@ -10,6 +10,7 @@ import {
   Signal,
   Battery,
   Download,
+  Rss,
 } from "lucide-react";
 
 import AnimatedMediakitGrid from "./animations/animated-mediakit-grid";
@@ -17,8 +18,13 @@ import AnimatedConnectionProcess from "./animations/animated-connection-process"
 
 import { Button } from "@mediaweb1/sdk/shadcn";
 import { Badge } from "@mediaweb1/sdk/shadcn";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
-const MediaKit = () => {
+const MediaKit = ({ cdnUrl }: { cdnUrl: string }) => {
+  const mediakitRef = useScrollReveal();
+  const socialFeedRef = useScrollReveal();
+  const connectionsRef = useScrollReveal();
+
   const [activeAnimations, setActiveAnimations] = useState({
     mediakit: false,
     connections: false,
@@ -59,7 +65,7 @@ const MediaKit = () => {
   }, []);
 
   return (
-    <section id="mediakit" className="relative min-h-[200vh] overflow-hidden">
+    <section id="mediakit" className="relative min-h-[300vh] overflow-hidden">
       {/* Global Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"></div>
       <div className="absolute top-0 left-0 w-full h-full opacity-20">
@@ -139,16 +145,16 @@ const MediaKit = () => {
         id="info-collection-section"
         className="relative min-h-screen flex items-center p-6 lg:p-12"
       >
-        <div className="inset-0 bg-gradient-to-r from-secondary-500/5 to-transparent"></div>
-        <div className="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="inset-0 bg-gradient-to-r from-primary-500/5 to-transparent"></div>
+        <div ref={mediakitRef} className="scroll-reveal relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 lg:text-left">
             <div className="flex items-center lg:justify-start gap-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-secondary-500 to-secondary-600 rounded-lg flex items-center justify-center">
+              <div className="w-12 h-12 bg-gradient-to-r from-primary-500 to-primary-600 rounded-lg flex items-center justify-center">
                 <BarChart3 className="w-6 h-6 text-white" />
               </div>
               <Badge
                 variant="secondary"
-                className="py-1 px-2 bg-secondary-500/20 text-secondary-300 border-secondary-500/30"
+                className="py-1 px-2 bg-primary-500/20 text-primary-300 border-primary-500/30"
               >
                 Mediakit
               </Badge>
@@ -160,12 +166,12 @@ const MediaKit = () => {
               Brands want numbers. Followers, engagement, demographics. We pull it all from your socials and package it
               beautifully. No spreadsheets, no screenshots. An inteactive mediakit directly in your portfolio
             </p>
-            <Button className="bg-gradient-to-r from-secondary-500 to-secondary-600 hover:from-secondary-600 hover:to-secondary-700 text-white px-8 py-3 text-lg">
+            <Button className="bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white px-8 py-3 text-lg">
               Learn more
             </Button>
           </div>
-          <div className="relative flex items-center">
-            <div className="relative w-full md:w-[600px] lg:w-full aspect-square bg-gradient-to-br from-slate-800/50 to-slate-700/50 rounded-2xl border border-secondary-500/20 flex items-center justify-center">
+          <div className="relative flex items-center justify-center">
+            <div className="relative w-full md:w-[600px] lg:w-full aspect-square bg-gradient-to-br from-slate-800/50 to-slate-700/50 rounded-2xl border border-primary-500/20 flex items-center justify-center">
               {activeAnimations.mediakit && <AnimatedMediakitGrid />}
 
               <div className="absolute top-4 left-4 w-2 h-2 bg-primary-400 rounded-full animate-ping"></div>
@@ -176,20 +182,64 @@ const MediaKit = () => {
         </div>
       </div>
 
+      {/* Social Feed Section */}
+      <div className="relative min-h-screen flex items-center p-6 lg:p-12">
+        <div className="absolute inset-0 bg-gradient-to-r from-secondary-500/5 to-transparent"></div>
+        <div ref={socialFeedRef} className="scroll-reveal relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6 lg:text-left">
+            <div className="flex items-center lg:justify-start gap-3 mb-6">
+              <div className="w-12 h-12 bg-gradient-to-r from-secondary-500 to-secondary-600 rounded-lg flex items-center justify-center">
+                <Rss className="w-6 h-6 text-white" />
+              </div>
+              <Badge
+                variant="secondary"
+                className="py-1 px-2 bg-secondary-500/20 text-secondary-300 border-secondary-500/30"
+              >
+                Social Feed
+              </Badge>
+            </div>
+            <h3 className="text-3xl lg:text-4xl font-bold text-white mb-4">
+              Your Social Feed. On Your Site.
+            </h3>
+            <p className="text-gray-300 mb-6 leading-relaxed text-lg">
+              Embed your latest Instagram posts, TikTok videos, and more
+              directly on your portfolio. Your content stays fresh
+              automatically — no copy-pasting, no updating. Visitors see your
+              best work the moment they land on your page.
+            </p>
+            <Button className="bg-gradient-to-r from-secondary-500 to-secondary-600 hover:from-secondary-600 hover:to-secondary-700 text-white px-8 py-3 text-lg">
+              Learn more
+            </Button>
+          </div>
+          <div className="relative flex items-center justify-center">
+            <div className="relative w-full md:w-[600px] lg:w-full aspect-square bg-gradient-to-br from-slate-800/50 to-slate-700/50 rounded-2xl border border-secondary-500/20 overflow-hidden">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover rounded-lg"
+                src={`${cdnUrl}/mediaweb/social-media-feed-component-video.mp4`}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div
         id="connections-section"
         className="relative min-h-screen flex items-center p-6 lg:p-12"
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-primary-500/5 to-transparent"></div>
-        <div className="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="absolute inset-0 bg-gradient-to-r from-tertiary-500/5 to-transparent"></div>
+        <div ref={connectionsRef} className="scroll-reveal relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-primary-500 to-primary-600 rounded-lg flex items-center justify-center">
+              <div className="w-12 h-12 bg-gradient-to-r from-tertiary-500 to-tertiary-600 rounded-lg flex items-center justify-center">
                 <Zap className="w-6 h-6 text-white" />
               </div>
               <Badge
                 variant="secondary"
-                className="py-1 px-2 bg-primary-500/20 text-primary-300 border-primary-500/30"
+                className="py-1 px-2 bg-tertiary-500/20 text-tertiary-300 border-tertiary-500/30"
               >
                 Connection process
               </Badge>
@@ -203,7 +253,7 @@ const MediaKit = () => {
             </p>
             <div className="space-y-4 text-gray-400">
               <div className="flex items-start gap-4">
-                <span className="shrink-0 w-8 h-8 bg-primary-500 text-white rounded-full flex items-center justify-center font-bold">
+                <span className="shrink-0 w-8 h-8 bg-tertiary-500 text-white rounded-full flex items-center justify-center font-bold">
                   1
                 </span>
                 <span className="text-base">
@@ -211,7 +261,7 @@ const MediaKit = () => {
                 </span>
               </div>
               <div className="flex items-start gap-4">
-                <span className="shrink-0 w-8 h-8 bg-primary-500 text-white rounded-full flex items-center justify-center font-bold">
+                <span className="shrink-0 w-8 h-8 bg-tertiary-500 text-white rounded-full flex items-center justify-center font-bold">
                   2
                 </span>
                 <span className="text-base">
@@ -221,12 +271,12 @@ const MediaKit = () => {
               </div>
             </div>
           </div>
-          <div className="relative">
-            <div className="relative h-96 bg-gradient-to-br from-slate-800/50 to-slate-700/50 rounded-2xl border border-primary-500/20 flex items-center justify-center">
+          <div className="relative flex justify-center">
+            <div className="w-[600px] max-w-[600px] relative h-96 bg-gradient-to-br from-slate-800/50 to-slate-700/50 rounded-2xl border border-tertiary-500/20 flex items-center justify-center">
               {activeAnimations.connections && <AnimatedConnectionProcess />}
 
               {/* Decorative elements */}
-              <div className="absolute top-4 right-4 w-3 h-3 bg-primary-400 rounded-full animate-ping"></div>
+              <div className="absolute top-4 right-4 w-3 h-3 bg-tertiary-400 rounded-full animate-ping"></div>
               <div className="absolute bottom-4 left-4 w-2 h-2 bg-secondary-400 rounded-full animate-pulse"></div>
             </div>
           </div>

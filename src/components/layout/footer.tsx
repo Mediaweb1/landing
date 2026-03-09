@@ -76,79 +76,80 @@ const Footer = () => {
               </Link>
 
               <div className="flex flex-col space-y-2 mb-4">
-                <p className="text-slate-300 max-w-96">
+                <p className="text-sm md:text-base text-slate-300 max-w-96">
                   Portfolio Websites Simplified.
                 </p>
-                <p className="text-slate-400 max-w-96">
-                  Create stunning portfolios in minutes with our AI assistant—or
-                  take full control yourself. Perfect for artists, creators, and
-                  influencers.
+                <p className="text-xs md:text-sm text-slate-400 max-w-96">
+                  "Your portfolio, mediakit, and social feed — all in one place.
+                  Built with AI in minutes. Perfect for UGC creators,
+                  freelancers, Content Creators and anyone who wants to stand
+                  out online.
                 </p>
               </div>
             </div>
 
             {/* Links */}
             <div className="w-full lg:w-2/3 flex justify-between">
-              <div className="flex flex-col space-y-4">
-                <h6 className="text-2xl text-primary-400 font-semibold">
+              <div className="flex flex-col space-y-2 md:space-y-4">
+                <h6 className="text-lg md:text-2xl text-primary-400 font-semibold">
                   Compare
                 </h6>
                 <Link
-                  className="text-slate-300 hover:text-primary-400 transition-colors"
+                  className="text-sm md:text-base text-slate-300 hover:text-primary-400 transition-colors"
                   href="/compare/mediakits-io"
                 >
                   vs MediaKits.io
                 </Link>
                 <Link
-                  className="text-slate-300 hover:text-primary-400 transition-colors"
+                  className="text-sm md:text-base text-slate-300 hover:text-primary-400 transition-colors"
                   href="/compare/lovable"
                 >
                   vs Lovable
                 </Link>
               </div>
 
-              <div className="flex flex-col space-y-4">
-                <h6 className="text-2xl text-primary-400 font-semibold">
+              <div className="flex flex-col space-y-2 md:space-y-4">
+                <h6 className="text-lg md:text-2xl text-primary-400 font-semibold">
                   Product
                 </h6>
                 <Link
-                  className="text-slate-300 hover:text-primary-400 transition-colors"
+                  className="text-sm md:text-base text-slate-300 hover:text-primary-400 transition-colors"
                   href="/faq"
                 >
                   FAQ
                 </Link>
                 <Link
-                  className="text-slate-300 hover:text-primary-400 transition-colors"
+                  className="text-sm md:text-base text-slate-300 hover:text-primary-400 transition-colors"
                   href="/pricing"
                 >
                   Pricing
                 </Link>
                 {/*   <Link
-                  className="text-slate-300 hover:text-primary-400 transition-colors"
+                  className="text-sm md:text-base text-slate-300 hover:text-primary-400 transition-colors"
                   href="/"
                 >
                   Templates
                 </Link> */}
               </div>
 
-              <div className="flex flex-col space-y-4">
-                <h6 className="text-2xl text-primary-400 font-semibold">
+              <div className="flex flex-col space-y-2 md:space-y-4">
+                <h6 className="text-lg md:text-2xl text-primary-400 font-semibold">
                   Company
                 </h6>
                 <Link
-                  className="text-slate-300 hover:text-primary-400 transition-colors"
+                  className="text-sm md:text-base text-slate-300 hover:text-primary-400 transition-colors"
                   href="/privacy-policy"
                 >
                   Privacy policy
                 </Link>
                 <Link
-                  className="text-slate-300 hover:text-primary-400 transition-colors"
+                  className="text-sm md:text-base text-slate-300 hover:text-primary-400 transition-colors"
                   href="/terms-of-service"
                 >
                   Terms of service
                 </Link>
                 <Link
-                  className="text-slate-300 hover:text-primary-400 transition-colors"
+                  className="text-sm md:text-base text-slate-300 hover:text-primary-400 transition-colors"
                   href="/contact"
                 >
                   Contact
@@ -157,7 +158,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex flex-col space-y-2 sm:space-y-0 sm:flex-row justify-between items-center pt-4 md:pt-8 border-t border-slate-700">
+          <div className="flex justify-between items-center mt-4 pt-4 md:pt-8 border-t border-slate-700">
             <div className="w-full sm:w-fit text-sm md:text-xl text-slate-400 whitespace-nowrap">
               © Mediaweb 2025
             </div>

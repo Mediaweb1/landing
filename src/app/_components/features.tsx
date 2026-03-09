@@ -1,7 +1,12 @@
+"use client";
+
 import { Card } from "@mediaweb1/sdk/shadcn";
 import { Globe, Rocket, Brush, Bot, BarChart3, HardDrive } from "lucide-react";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 const FeatureRundown = () => {
+  const headerRef = useScrollReveal();
+  const gridRef = useScrollReveal();
   const features = [
     {
       icon: Bot,
@@ -51,7 +56,7 @@ const FeatureRundown = () => {
     <section className="relative px-6 py-20 md:py-28">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div ref={headerRef} className="scroll-reveal text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
             Everything you need,{" "}
             <span className="bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">
@@ -72,7 +77,7 @@ const FeatureRundown = () => {
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+        <div ref={gridRef} className="scroll-reveal grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
           {features.map((feature, index) => (
             <div
               key={index}

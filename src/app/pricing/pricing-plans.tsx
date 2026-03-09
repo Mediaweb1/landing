@@ -14,9 +14,11 @@ import { Check, Zap, Rocket } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { LANDING_PAGE_PLANS } from "@mediaweb1/sdk/constants";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 const Pricing = ({ showAICredits = false }: { showAICredits?: boolean }) => {
   const [interval, setInterval] = useState<"monthly" | "yearly">("monthly");
+  const sectionRef = useScrollReveal();
 
   return (
     <section id="pricing" className="w-full relative px-6 py-20 md:py-28">
@@ -28,7 +30,7 @@ const Pricing = ({ showAICredits = false }: { showAICredits?: boolean }) => {
         style={{ animationDelay: "2s" }}
       ></div>
 
-      <div className="relative z-10 max-w-6xl mx-auto">
+      <div ref={sectionRef} className="scroll-reveal relative z-10 max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
           <Badge

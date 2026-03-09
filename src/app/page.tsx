@@ -3,12 +3,13 @@ import VideoSection from "./_components/video-section";
 import Features from "./_components/features";
 import MediaKit from "./_components/mediakit";
 import Sandbox from "./_components/sandbox";
+import TemplateShowcase from "./_components/template-showcase";
 import PricingPlans from "./pricing/pricing-plans";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Mediaweb – AI Portfolio Website Builder + Media Kit",
-  description: "Create a stunning portfolio website and an auto-updating media kit from your social profiles. Built for creators and freelancers.",
+  description: "Your portfolio, mediakit, and social feed all in one place, built by AI. Perfect for UGC Creators, Content Creators, Freelancers and anyone who needs a portfolio website.",
   alternates: {
     canonical: "/",
   },
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
     siteName: "Mediaweb",
     type: "website",
     title: "Mediaweb – AI Portfolio Website Builder + Media Kit",
-    description: "Create a stunning portfolio website and an auto-updating media kit from your social profiles. Built for creators and freelancers.",
+    description: "Your portfolio, mediakit, and social feed all in one place, built by AI. Perfect for UGC Creators, Content Creators, Freelancers and anyone who needs a portfolio website.",
     url: "https://mediaweb.app/",
     images: [
       {
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Mediaweb – AI Portfolio Website Builder + Media Kit",
-    description: "Create a stunning portfolio website and an auto-updating media kit from your social profiles. Built for creators and freelancers.",
+    description: "Your portfolio, mediakit, and social feed all in one place, built by AI. Perfect for UGC Creators, Content Creators, Freelancers and anyone who needs a portfolio website.",
     images: ["https://mediaweb.app/og/home.png"],
   },
   other: {
@@ -76,7 +77,7 @@ export const metadata: Metadata = {
           "price": "20",
           "priceCurrency": "USD",
           "priceValidUntil": "2026-03-01",
-          "description": "Creator - Pro plan - 3 websites, 10 pages per website, 3GB storage, 3 custom domains"
+          "description": "Creator - Pro plan - 3 websites, 3 custom domains, free hosting, mediakit, custom themes"
         },
           "publisher": {
             "@id": "https://mediaweb.app/#organization"
@@ -106,9 +107,10 @@ const Landing = () => {
       <div className="relative z-10">
         <Hero />
         <VideoSection />
+        <TemplateShowcase />
         <Features />
         <Sandbox />
-        <MediaKit />
+        <MediaKit cdnUrl={process.env.R2_PUBLIC_URL || ""} />
         <PricingPlans />
       </div>
     </div>

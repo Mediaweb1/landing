@@ -46,7 +46,7 @@ export const metadata: Metadata = {
               "price": "20",
               "priceCurrency": "USD",
               "priceValidUntil": "2026-03-01",
-              "description": "Creator - Pro plan - 3 websites, 10 pages per website, 3GB storage, 3 custom domains"
+              "description": "Creator - Pro plan - 3 websites, 3 custom domains, free hosting, mediakit, custom themes"
             }
           ],
           "publisher": {

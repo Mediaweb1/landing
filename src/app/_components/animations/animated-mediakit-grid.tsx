@@ -30,7 +30,7 @@ const AnimatedMediakitGrid = () => {
             <div className="absolute inset-0 rounded-xl bg-linear-to-br from-primary-500/20 to-primary-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
             {/* Header */}
-            <div className="relative flex items-center gap-2 mb-6">
+            <div className="relative flex items-center gap-2 mb-2 xl:mb-6">
               <div className="w-6 h-6 bg-primary-500/20 rounded-lg flex items-center justify-center">
                 <BarChart3 className="w-4 h-4 text-primary-400" />
               </div>
@@ -81,7 +81,7 @@ const AnimatedMediakitGrid = () => {
             <div className="absolute inset-0 rounded-xl bg-linear-to-br from-secondary-500/20 to-secondary-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
             {/* Header */}
-            <div className="relative flex items-center gap-2 mb-6">
+            <div className="relative flex items-center gap-2 mb-2 xl:mb-6">
               <div className="w-6 h-6 bg-secondary-500/20 rounded-lg flex items-center justify-center">
                 <Users className="w-4 h-4 text-secondary-400" />
               </div>
@@ -109,7 +109,7 @@ const AnimatedMediakitGrid = () => {
             <div className="absolute inset-0 rounded-xl bg-linear-to-br from-primary-500/20 to-primary-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
             {/* Header */}
-            <div className="relative flex items-center gap-2 mb-6">
+            <div className="relative flex items-center gap-2 mb-2 xl:mb-6">
               <div className="w-6 h-6 bg-primary-500/20 rounded-lg flex items-center justify-center">
                 <PieChart className="w-4 h-4 text-primary-400" />
               </div>
@@ -134,7 +134,7 @@ const AnimatedMediakitGrid = () => {
             <div className="absolute inset-0 rounded-xl bg-linear-to-br from-secondary-500/20 to-secondary-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
             {/* Header */}
-            <div className="relative flex items-center gap-2 mb-6">
+            <div className="relative flex items-center gap-2 mb-2 xl:mb-6">
               <div className="w-6 h-6 bg-secondary-500/20 rounded-lg flex items-center justify-center">
                 <MapPin className="w-4 h-4 text-secondary-400" />
               </div>
