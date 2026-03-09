@@ -106,7 +106,7 @@ const Landing = () => {
 
       <div className="relative z-10">
         <Hero />
-        <VideoSection />
+        <VideoSection cdnUrl={process.env.R2_PUBLIC_URL || ""} />
         <TemplateShowcase />
         <Features />
         <Sandbox />

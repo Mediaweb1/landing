@@ -1,18 +1,31 @@
-import { Card } from "@mediaweb1/sdk/shadcn";
+"use client";
+
+import { useEffect, useRef } from "react";
 import {
   ChevronLeft,
   ChevronRight,
   Files,
-  Play,
   Plus,
   RotateCw,
   Search,
   Share,
 } from "lucide-react";
 
-const CDN_URL = process.env.R2_PUBLIC_URL;
+const VideoSection = ({ cdnUrl }: { cdnUrl: string }) => {
+  const videoRef = useRef<HTMLVideoElement>(null);
 
-const VideoSection = () => {
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const handleCanPlay = () => {
+      video.play().catch(() => {});
+    };
+
+    video.addEventListener("canplay", handleCanPlay);
+    return () => video.removeEventListener("canplay", handleCanPlay);
+  }, []);
+
   return (
     <section id="video-section" className="relative px-6 py-6 lg:py-16">
       <div className="w-full max-w-[1280px] mx-auto">
@@ -48,12 +61,13 @@ const VideoSection = () => {
             </div>
 
             <video
-              src={`${CDN_URL}/mediaweb/landing-page-video-2.mp4`}
+              ref={videoRef}
+              src={`${cdnUrl}/mediaweb/landing-page-video-2.mp4`}
               autoPlay
               muted
               loop
               playsInline
-              preload="auto"
+              poster={`${cdnUrl}/mediaweb/landing-page-video-2-cover.webp`}
               className="w-full h-auto rounded-b-2xl relative z-10 shadow-2xl shadow-white/10 drop-shadow-2xl"
               style={{
                 filter:
