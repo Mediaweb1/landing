@@ -1,49 +1,16 @@
-"use client";
-
-import { useEffect, useRef, useState } from "react";
 import {
   ChevronLeft,
   ChevronRight,
   Files,
-  Play,
   Plus,
   RotateCw,
   Search,
   Share,
 } from "lucide-react";
 
-const VideoSection = ({ cdnUrl }: { cdnUrl: string }) => {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [showPlayButton, setShowPlayButton] = useState(false);
+const CDN_URL = process.env.R2_PUBLIC_URL;
 
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    const handlePlaying = () => {
-      setShowPlayButton(false);
-    };
-
-    video.addEventListener("playing", handlePlaying);
-
-    // Try to autoplay — if it fails, show the play button
-    video.play().catch(() => {
-      setShowPlayButton(true);
-    });
-
-    return () => {
-      video.removeEventListener("playing", handlePlaying);
-    };
-  }, []);
-
-  const handlePlayClick = () => {
-    const video = videoRef.current;
-    if (!video) return;
-    video.muted = true;
-    video.play().catch(() => {});
-    setShowPlayButton(false);
-  };
-
+const VideoSection = () => {
   return (
     <section id="video-section" className="relative px-6 py-6 lg:py-16">
       <div className="w-full max-w-[1280px] mx-auto">
@@ -78,33 +45,19 @@ const VideoSection = ({ cdnUrl }: { cdnUrl: string }) => {
               </div>
             </div>
 
-            <div className="relative">
-              <video
-                ref={videoRef}
-                src={`${cdnUrl}/mediaweb/landing-page-video-2.mp4`}
-                autoPlay
-                muted
-                loop
-                playsInline
-                poster={`${cdnUrl}/mediaweb/landing-page-video-2-cover.webp`}
-                className="w-full h-auto rounded-b-2xl relative z-10 shadow-2xl shadow-white/10 drop-shadow-2xl"
-                style={{
-                  filter:
-                    "drop-shadow(0 25px 50px rgba(255, 255, 255, 0.08)) drop-shadow(0 0 30px rgba(59, 130, 246, 0.15))",
-                }}
-              />
-
-              {showPlayButton && (
-                <button
-                  onClick={handlePlayClick}
-                  className="absolute inset-0 z-20 flex items-center justify-center bg-black/30 rounded-b-2xl transition-opacity"
-                >
-                  <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
-                    <Play className="w-7 h-7 text-slate-900 ml-1" />
-                  </div>
-                </button>
-              )}
-            </div>
+            <video
+              src={`${CDN_URL}/mediaweb/landing-page-video-3.mp4`}
+              autoPlay
+              muted
+              loop
+              playsInline
+              poster={`${CDN_URL}/mediaweb/landing-page-video-2-cover.webp`}
+              className="w-full h-auto rounded-b-2xl relative z-10 shadow-2xl shadow-white/10 drop-shadow-2xl"
+              style={{
+                filter:
+                  "drop-shadow(0 25px 50px rgba(255, 255, 255, 0.08)) drop-shadow(0 0 30px rgba(59, 130, 246, 0.15))",
+              }}
+            />
           </div>
         </div>
       </div>
