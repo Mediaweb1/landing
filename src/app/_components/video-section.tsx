@@ -46,7 +46,7 @@ const VideoSection = () => {
             </div>
 
             <video
-              src={`${CDN_URL}/mediaweb/landing-page-video-3.mp4`}
+              src={`${CDN_URL}/mediaweb/landing-page-4.mp4`}
               autoPlay
               muted
               loop
