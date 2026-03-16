@@ -2,7 +2,6 @@ import Hero from "./_components/hero";
 import VideoSection from "./_components/video-section";
 import Features from "./_components/features";
 import MediaKit from "./_components/mediakit";
-import Sandbox from "./_components/sandbox";
 import TemplateShowcase from "./_components/template-showcase";
 import PricingPlans from "./pricing/pricing-plans";
 import type { Metadata } from "next";
@@ -109,7 +108,6 @@ const Landing = () => {
         <VideoSection />
         <TemplateShowcase />
         <Features />
-        <Sandbox />
         <MediaKit cdnUrl={process.env.R2_PUBLIC_URL || ""} />
         <PricingPlans />
       </div>

@@ -33,13 +33,6 @@ const Hero = () => {
           >
             Get Started Now
           </Link>
-
-          <Link
-            href="https://dashboard.mediaweb.app/editor/sandbox"
-            className="hidden sm:inline-flex border-gray-600 text-white hover:bg-white/10 px-8 py-3 text-lg backdrop-blur-xs bg-transparent border rounded-md"
-          >
-            Try the sandbox
-          </Link>
         </div>
 
         {/* Discount Details */}
