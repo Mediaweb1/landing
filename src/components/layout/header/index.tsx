@@ -30,7 +30,7 @@ export default function Header() {
             href="https://dashboard.mediaweb.app/register"
             className="bg-gradient-to-r from-primary-600 to-primary-500 hover:from-primary-500 hover:to-primary-400 text-white border-0 shadow-lg shadow-primary-500/25 px-6 py-2 rounded-md font-medium transition-all duration-200"
           >
-            Get Started
+            Start 14-Day Free Trial
           </Link>
         </div>
       </div>

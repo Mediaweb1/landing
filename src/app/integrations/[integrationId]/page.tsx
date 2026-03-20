@@ -323,7 +323,7 @@ const Integration = async ({ params }: { params: Promise<{ integrationId: string
                   href="https://dashboard.mediaweb.app/register"
                   className="inline-block rounded-lg bg-gradient-to-r from-primary-600 to-primary-500 hover:from-primary-500 hover:to-primary-400 text-white px-8 py-3 text-lg font-semibold shadow-xl shadow-primary-500/25"
                 >
-                  Get Started Now
+                  Start Your Free Trial
                 </Link>
               </div>
             )}
@@ -412,7 +412,7 @@ const Integration = async ({ params }: { params: Promise<{ integrationId: string
               href="https://dashboard.mediaweb.app/register"
               className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-primary-600 to-primary-500 hover:from-primary-500 hover:to-primary-400 text-white px-8 py-3 text-lg font-semibold shadow-xl shadow-primary-500/25"
             >
-              {data.available ? "Get Started Now" : "Join Waitlist"}
+              {data.available ? "Start Your Free Trial" : "Join Waitlist"}
               <ArrowRight className="w-5 h-5" />
             </Link>
           </div>

@@ -147,7 +147,7 @@ const Sandbox = () => {
           <div className="text-center">
             <Link href="https://dashboard.mediaweb.app/register">
               <Button className="bg-gradient-to-r from-primary-600 to-primary-500 hover:from-primary-500 hover:to-primary-400 text-white px-8 py-3 text-lg">
-                Get Started Now
+                Try Free for 14 Days
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </Link>

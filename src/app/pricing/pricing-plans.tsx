@@ -48,8 +48,8 @@ const Pricing = ({ showAICredits = false }: { showAICredits?: boolean }) => {
             Pricing
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-            Join now and lock in early bird pricing for life. The price you
-            see today is the price you keep—even after we raise it.
+            Start with a 14-day free trial. Lock in early bird pricing for
+            life — the price you see today is the price you keep.
           </p>
         </div>
 
@@ -159,9 +159,12 @@ const PlanCard = ({
           </div>
 
           {/* Discount Badge */}
-          <div className="flex items-center justify-center">
+          <div className="flex flex-col items-center gap-2">
             <Badge className="bg-green-500/10 text-green-600 dark:text-green-400 border border-green-500/20 font-semibold px-2 py-1">
               60% OFF Forever
+            </Badge>
+            <Badge className="bg-primary-500/10 text-primary-300 border border-primary-500/20 font-semibold px-2 py-1">
+              14-Day Free Trial
             </Badge>
           </div>
         </div>
@@ -203,7 +206,7 @@ const PlanCard = ({
             )}
           >
             <Zap className="w-4 h-4 mr-2" />
-            Get Started
+            Start Free Trial
           </Button>
         </Link>
       </CardContent>

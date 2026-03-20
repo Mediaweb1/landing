@@ -123,7 +123,7 @@ const FileStorage = () => {
               <Button 
                 className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-8 py-3 text-lg"
               >
-                Get Started Now
+                Try Free for 14 Days
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </Link>

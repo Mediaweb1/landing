@@ -59,7 +59,7 @@ export const metadata: Metadata = {
           "name": "Do you have a free plan?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We don't offer a free plan, but we do have a 30-day money-back guarantee—so you can try Mediaweb risk-free. Plus, our Early Bird Discount gives you $20/month instead of $50/month. Expires April 1, 2026. Lock in this price forever as an early adopter."
+            "text": "We offer a 14-day free trial on all plans—no charge until the trial ends. Plus, our Early Bird Discount gives you $20/month instead of $50/month. Expires May 1, 2026. Lock in this price forever as an early adopter."
           }
         },
         {
@@ -107,7 +107,7 @@ const faqs = [
   {
     question: "Do you have a free plan?",
     answer:
-      "We don't offer a free plan, but we do have a 30-day money-back guarantee—so you can try Mediaweb risk-free. Plus, our Early Bird Discount gives you $20/month instead of $50/month. Expires April 1, 2026. Lock in this price forever as an early adopter.",
+      "We offer a 14-day free trial on all plans—no charge until the trial ends. Plus, our Early Bird Discount gives you $20/month instead of $50/month. Expires May 1, 2026. Lock in this price forever as an early adopter.",
     featured: true,
   },
   {
@@ -231,7 +231,7 @@ export default function FAQPage() {
               href="https://dashboard.mediaweb.app/register"
               className="inline-block rounded-lg bg-gradient-to-r from-primary-600 to-primary-500 hover:from-primary-500 hover:to-primary-400 text-white px-8 py-3 text-lg font-semibold shadow-xl shadow-primary-500/25"
             >
-              Get Started Now
+              Start Your Free Trial
             </a>
           </div>
         </div>

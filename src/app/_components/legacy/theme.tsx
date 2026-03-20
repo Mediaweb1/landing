@@ -161,7 +161,7 @@ const Theme = () => {
               <Button
                 className="bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white px-8 py-3 text-lg"
               >
-                Get Started Now
+                Try Free for 14 Days
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </Link>

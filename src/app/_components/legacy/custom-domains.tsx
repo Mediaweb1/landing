@@ -49,7 +49,7 @@ const CustomDomains = () => {
               <Button 
                 className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-3 text-lg"
               >
-                Get Started Now
+                Try Free for 14 Days
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </Link>

@@ -147,7 +147,7 @@ export function MobileSidebar() {
               href="https://dashboard.mediaweb.app/register"
               className="w-full flex items-center justify-center bg-gradient-to-r from-primary-600 to-primary-500 hover:from-primary-500 hover:to-primary-400 text-white border-0 shadow-lg shadow-primary-500/25 px-6 py-3 rounded-md font-medium transition-all duration-200"
             >
-              Get Started
+              Start 14-Day Free Trial
             </Link>
           </SheetClose>
         </div>
