@@ -219,10 +219,9 @@ export default function MediakitsIOComparison() {
                   <div className="flex items-start gap-3 bg-slate-700/30 p-4 rounded-lg">
                     <Check className="w-6 h-6 text-green-400 shrink-0 mt-1" />
                     <div>
-                      <h3 className="text-white font-semibold mb-1">AI Website Builder</h3>
+                      <h3 className="text-white font-semibold mb-1">AI Portfolio Builder</h3>
                       <p className="text-gray-300">
-                        Tell our AI what you want in plain English. "Create a photography portfolio with a dark theme" or "add a services page." 
-                        It builds exactly what you need in seconds.
+                        Tell our AI who you are. It builds your portfolio, mediakit and link-in-bio page in minutes — no design skills, no templates to pick from.
                       </p>
                     </div>
                   </div>
@@ -230,9 +229,9 @@ export default function MediakitsIOComparison() {
                   <div className="flex items-start gap-3 bg-slate-700/30 p-4 rounded-lg">
                     <Check className="w-6 h-6 text-green-400 shrink-0 mt-1" />
                     <div>
-                      <h3 className="text-white font-semibold mb-1">40+ Designer Templates</h3>
+                      <h3 className="text-white font-semibold mb-1">Link-in-bio, built in</h3>
                       <p className="text-gray-300">
-                        Professional templates for photographers, designers, models, musicians, and content creators. Not just mediakit templates—full website layouts.
+                        A branded link-in-bio page lives on your own site — styled to match your portfolio, not a third-party tool with their logo on it.
                       </p>
                     </div>
                   </div>

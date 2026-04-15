@@ -77,13 +77,12 @@ const Footer = () => {
 
               <div className="flex flex-col space-y-2 mb-4">
                 <p className="text-sm md:text-base text-slate-300 max-w-96">
-                  Portfolio Websites Simplified.
+                  Land more brand deals.
                 </p>
                 <p className="text-xs md:text-sm text-slate-400 max-w-96">
-                  "Your portfolio, mediakit, and social feed — all in one place.
-                  Built with AI in minutes. Perfect for UGC creators,
-                  freelancers, Content Creators and anyone who wants to stand
-                  out online.
+                  Your portfolio, mediakit, and link-in-bio — all in one place,
+                  built by AI in minutes. Made for creators who want brands to
+                  say yes.
                 </p>
               </div>
             </div>
@@ -124,12 +123,6 @@ const Footer = () => {
                 >
                   Pricing
                 </Link>
-                {/*   <Link
-                  className="text-sm md:text-base text-slate-300 hover:text-primary-400 transition-colors"
-                  href="/"
-                >
-                  Templates
-                </Link> */}
               </div>
 
               <div className="flex flex-col space-y-2 md:space-y-4">
@@ -160,7 +153,7 @@ const Footer = () => {
 
           <div className="flex justify-between items-center mt-4 pt-4 md:pt-8 border-t border-slate-700">
             <div className="w-full sm:w-fit text-sm md:text-xl text-slate-400 whitespace-nowrap">
-              © Mediaweb 2025
+              © Mediaweb 2026
             </div>
             <div className="flex space-x-4 h-8 w-full justify-end">
               <a

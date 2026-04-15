@@ -214,12 +214,14 @@ export default function LovableComparison() {
                     <Check className="w-6 h-6 text-green-400 shrink-0 mt-1" />
                     <div>
                       <h3 className="text-white font-semibold mb-1">
-                        40+ Creator Templates
+                        Link-in-bio, built in
                       </h3>
                       <p className="text-gray-300">
-                        Templates designed specifically for photographers,
-                        designers, models, musicians, and content creators. Not
-                        generic web app templates—actual portfolio layouts.
+                        A branded link-in-bio page lives on your own site —
+                        styled to match your portfolio, not tacked on from a
+                        third-party tool. Photographers, designers, models,
+                        musicians and content creators all get the same branded
+                        experience.
                       </p>
                     </div>
                   </div>

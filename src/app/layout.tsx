@@ -17,8 +17,8 @@ const inter = Inter({
 const baseUrl = "https://mediaweb.app";
 
 export const metadata: Metadata = {
-  title: "Mediaweb – AI Portfolio Website Builder + Media Kit for Creators",
-  description: "Your portfolio, mediakit, and social feed all in one place, built by AI. Perfect for UGC Creators, Content Creators, Freelancers and anyone who needs a portfolio website.",
+  title: "Mediaweb – Land More Brand Deals | AI Portfolio + Mediakit for Creators",
+  description: "Portfolio, mediakit and link-in-bio — all in one place, built by AI in minutes. Made for creators who want brands to reply. Start a 14-day free trial.",
   metadataBase: new URL(baseUrl),
   alternates: {
     canonical: "/",

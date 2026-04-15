@@ -39,8 +39,8 @@ export const STRUCTURED_DATA = {
         "@type": "Offer",
         "price": "20",
         "priceCurrency": "USD",
-        "priceValidUntil": "2026-03-01",
-        "description": "Creator - Pro plan - 3 websites, 10 pages per website, 3GB storage, 3 custom domains"
+        "priceValidUntil": "2027-05-01",
+        "description": "Creator Pro plan — AI-built portfolio, verified mediakit, link-in-bio page, custom domains and free hosting. Early Bird pricing at $20/mo."
       },
       "publisher": {
         "@id": "https://mediaweb.app/#organization"

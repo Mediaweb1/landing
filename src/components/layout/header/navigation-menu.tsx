@@ -48,10 +48,10 @@ export function NavigationMenuComponent() {
                     </div>
                     <div className="flex-1">
                       <span className="text-lg font-semibold text-white mb-1 block">
-                        AI Website Builder
+                        AI Portfolio Builder
                       </span>
                       <p className="text-sm text-gray-400 leading-relaxed">
-                        Tell our AI what you want. Watch it build your portfolio in seconds.
+                        Tell our AI who you are. Watch it build your portfolio, mediakit and link-in-bio in minutes.
                       </p>
                     </div>
                   </button>

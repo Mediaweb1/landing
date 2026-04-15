@@ -99,7 +99,7 @@ const Hero = () => {
             <h1 className="text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-bold mb-4 leading-[1.1] flex flex-col">
               <span className="text-white">Land more </span>
               <span className="text-secondary-400">
-                Brand Deals
+                brand deals
               </span>
             </h1>
 

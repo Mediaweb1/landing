@@ -6,16 +6,16 @@ import PricingPlans from "./pricing/pricing-plans";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Mediaweb – AI Portfolio Website Builder + Media Kit",
-  description: "Your portfolio, mediakit, and social feed all in one place, built by AI. Perfect for UGC Creators, Content Creators, Freelancers and anyone who needs a portfolio website.",
+  title: "Mediaweb – Land More Brand Deals | AI Portfolio + Mediakit",
+  description: "Portfolio, mediakit and link-in-bio — all in one place, built by AI in minutes. Made for creators who want brands to reply. Start a 14-day free trial.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     siteName: "Mediaweb",
     type: "website",
-    title: "Mediaweb – AI Portfolio Website Builder + Media Kit",
-    description: "Your portfolio, mediakit, and social feed all in one place, built by AI. Perfect for UGC Creators, Content Creators, Freelancers and anyone who needs a portfolio website.",
+    title: "Mediaweb – Land More Brand Deals | AI Portfolio + Mediakit",
+    description: "Portfolio, mediakit and link-in-bio — all in one place, built by AI in minutes. Made for creators who want brands to reply. Start a 14-day free trial.",
     url: "https://mediaweb.app/",
     images: [
       {
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mediaweb – AI Portfolio Website Builder + Media Kit",
-    description: "Your portfolio, mediakit, and social feed all in one place, built by AI. Perfect for UGC Creators, Content Creators, Freelancers and anyone who needs a portfolio website.",
+    title: "Mediaweb – Land More Brand Deals | AI Portfolio + Mediakit",
+    description: "Portfolio, mediakit and link-in-bio — all in one place, built by AI in minutes. Made for creators who want brands to reply. Start a 14-day free trial.",
     images: ["https://mediaweb.app/og/home.png"],
   },
   other: {
@@ -74,8 +74,8 @@ export const metadata: Metadata = {
           "@type": "Offer",
           "price": "20",
           "priceCurrency": "USD",
-          "priceValidUntil": "2026-03-01",
-          "description": "Creator - Pro plan - 3 websites, 3 custom domains, free hosting, mediakit, custom themes"
+          "priceValidUntil": "2027-05-01",
+          "description": "Creator Pro plan — AI-built portfolio, verified mediakit, link-in-bio page, custom domains and free hosting. Early Bird pricing at $20/mo."
         },
           "publisher": {
             "@id": "https://mediaweb.app/#organization"
