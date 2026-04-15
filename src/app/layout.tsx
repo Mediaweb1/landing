@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Header from "@/components/layout/header";
+import AnnouncementBar from "@/components/layout/announcement-bar";
 import Footer from "@/components/layout/footer";
 import { PostHogProvider } from "./post-hog";
 import { TikTokPixel } from "@mediaweb1/sdk/tiktok-pixel";
@@ -38,6 +39,7 @@ export default function RootLayout({
         <PostHogProvider />
         <TikTokPixel />
         <GoogleAdsPixel />
+        <AnnouncementBar />
         <Header />
         <main className="min-h-screen">
           {children}

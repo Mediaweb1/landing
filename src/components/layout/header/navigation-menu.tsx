@@ -23,7 +23,7 @@ export function NavigationMenuComponent() {
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="text-white bg-transparent hover:bg-white/10 hover:text-white data-[state=open]:bg-primary-500/20 data-[state=open]:text-white focus:bg-primary-500/20 focus:text-white active:bg-primary-500/30">
-            Solutions
+            Features
           </NavigationMenuTrigger>
           <NavigationMenuContent className="bg-gradient-to-br from-slate-900/95 to-slate-800/95 backdrop-blur-xl border border-slate-600/50 shadow-2xl">
             <ul className="grid gap-4 p-8 w-[520px] lg:w-[640px] lg:grid-cols-[1fr_1fr]">
