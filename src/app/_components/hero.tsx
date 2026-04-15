@@ -12,8 +12,8 @@ const bullets = [
     rest: "Verified stats from Instagram, TikTok, YouTube & Facebook.",
   },
   {
-    lead: "Your own domain.",
-    rest: "One-click publish, free hosting, zero setup.",
+    lead: "Link in bio, built in.",
+    rest: "A branded link-in-bio page lives on your site — styled your way, to fit your brand",
   },
 ];
 
