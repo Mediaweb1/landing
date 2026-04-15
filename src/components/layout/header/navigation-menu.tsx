@@ -1,10 +1,20 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import { Sparkles } from "lucide-react";
 import { INTEGRATIONS } from "@/constants/integrations";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, navigationMenuTriggerStyle } from "@/components/shadcn/navigation-menu";
 import { JumpListItem } from "./jump-list-item";
 import { IntegrationListItem } from "./integration-list-item";
+
+const triggerClass =
+  "text-gray-200 bg-transparent hover:bg-white/5 hover:text-white data-[state=open]:bg-white/5 data-[state=open]:text-white focus:bg-white/5 focus:text-white";
+
+const linkClass =
+  "text-gray-200 bg-transparent hover:bg-white/5 hover:text-white focus:bg-white/5 focus:text-white";
+
+const menuContentClass =
+  "bg-slate-900/80 backdrop-blur-xl border border-white/10 shadow-2xl";
 
 export function NavigationMenuComponent() {
   const handleJumpClick = (selector: string) => {
@@ -22,89 +32,73 @@ export function NavigationMenuComponent() {
     <NavigationMenu className="relative">
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-white bg-transparent hover:bg-white/10 hover:text-white data-[state=open]:bg-primary-500/20 data-[state=open]:text-white focus:bg-primary-500/20 focus:text-white active:bg-primary-500/30">
+          <NavigationMenuTrigger className={triggerClass}>
             Features
           </NavigationMenuTrigger>
-          <NavigationMenuContent className="bg-gradient-to-br from-slate-900/95 to-slate-800/95 backdrop-blur-xl border border-slate-600/50 shadow-2xl">
-            <ul className="grid gap-4 p-8 w-[520px] lg:w-[640px] lg:grid-cols-[1fr_1fr]">
+          <NavigationMenuContent className={menuContentClass}>
+            <ul className="grid gap-3 p-6 w-[520px] lg:w-[640px] lg:grid-cols-[1fr_1fr]">
               <li className="!flex row-span-5 col-span-2">
                 <NavigationMenuLink asChild>
                   <button
-                    className="group flex h-full w-full select-none flex-col justify-between rounded-2xl border bg-gradient-to-br from-primary-500/20 to-secondary-500/20 border-primary-500/30 backdrop-blur-xs p-8 no-underline outline-hidden shadow-xl transition-all duration-300 hover:shadow-2xl hover:border-primary-400/50 hover:from-primary-500/30 hover:to-secondary-500/30 text-left relative overflow-hidden"
+                    className="group flex h-full w-full select-none flex-col justify-between rounded-xl border border-primary-500/30 bg-gradient-to-br from-primary-500/10 to-secondary-500/10 hover:from-primary-500/15 hover:to-secondary-500/15 hover:border-primary-500/40 p-6 no-underline outline-hidden transition-colors text-left"
                     onClick={() => handleJumpClick('ease-of-use')}
                   >
-                    <div className="absolute -inset-px bg-gradient-to-r from-primary-500/10 to-secondary-500/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
-                    
-                    <div className="w-12 h-12 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                      </svg>
+                    <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-primary-500 to-secondary-500 flex items-center justify-center mb-3 shadow-lg shadow-primary-500/25">
+                      <Sparkles className="w-5 h-5 text-white" />
                     </div>
-                    
                     <div className="flex-1">
-                      <span className="mb-3 text-xl font-bold text-white group-hover:text-primary-200 transition-colors">
+                      <span className="text-lg font-semibold text-white mb-1 block">
                         AI Website Builder
                       </span>
-                      <p className="text-base text-gray-300 leading-relaxed group-hover:text-white transition-colors">
-                        Tell our AI what you want. Watch it build. Create stunning websites with artificial intelligence in seconds.
+                      <p className="text-sm text-gray-400 leading-relaxed">
+                        Tell our AI what you want. Watch it build your portfolio in seconds.
                       </p>
                     </div>
-                    
-                    <div className="absolute top-4 right-4 w-2 h-2 bg-primary-400 rounded-full animate-pulse"></div>
-                    <div className="absolute bottom-4 right-4 w-3 h-3 bg-secondary-400 rounded-full animate-ping opacity-50"></div>
                   </button>
                 </NavigationMenuLink>
               </li>
               <JumpListItem
                 selector="mediakit"
                 title="Mediakit"
-                description="Professional analytics and brand collaboration tools"
+                description="Verified stats from IG, TikTok, YouTube & Facebook"
                 onClick={handleJumpClick}
-                gradient="from-secondary-500/20 to-purple-500/20"
-                borderColor="border-secondary-500/30"
-                iconColor="from-secondary-500 to-purple-500"
                 icon="chart"
+                accent="secondary"
               />
               <JumpListItem
                 selector="custom-domains"
                 title="Custom Domains"
-                description="Your brand, your domain with global CDN"
+                description="Your brand, your domain — or a free .mediaweb.app link"
                 onClick={handleJumpClick}
-                gradient="from-blue-500/20 to-cyan-500/20"
-                borderColor="border-blue-500/30"
-                iconColor="from-blue-500 to-cyan-500"
                 icon="globe"
+                accent="tertiary"
               />
               <JumpListItem
-                selector="designer-templates"
-                title="Designer Templates"
-                description="40+ pixel-perfect layouts for every creator"
+                selector="link-in-bio"
+                title="Link in bio"
+                description="A branded link-in-bio page built into your site"
                 onClick={handleJumpClick}
-                gradient="from-purple-500/20 to-pink-500/20"
-                borderColor="border-purple-500/30"
-                iconColor="from-purple-500 to-pink-500"
-                icon="template"
+                icon="link"
+                accent="primary"
               />
               <JumpListItem
                 selector="theme-studio"
                 title="Theme Studio"
-                description="One-click styling with professional presets"
+                description="One-click styling that matches your aesthetic"
                 onClick={handleJumpClick}
-                gradient="from-pink-500/20 to-rose-500/20"
-                borderColor="border-pink-500/30"
-                iconColor="from-pink-500 to-rose-500"
                 icon="palette"
+                accent="secondary"
               />
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-white bg-transparent hover:bg-white/10 hover:text-white data-[state=open]:bg-orange-500/20 data-[state=open]:text-white focus:bg-orange-500/20 focus:text-white active:bg-orange-500/30">
+          <NavigationMenuTrigger className={triggerClass}>
             Integrations
           </NavigationMenuTrigger>
-          <NavigationMenuContent className="bg-gradient-to-br from-slate-900/95 to-slate-800/95 backdrop-blur-xl border border-slate-600/50 shadow-2xl">
-            <ul className="grid w-[480px] gap-4 p-8 pt-12 md:w-[520px] md:grid-cols-2">
+          <NavigationMenuContent className={menuContentClass}>
+            <ul className="grid w-[480px] gap-3 p-6 md:w-[520px] md:grid-cols-2">
               {INTEGRATIONS.map((integration, index) => (
                 <IntegrationListItem
                   key={integration.title}
@@ -123,10 +117,7 @@ export function NavigationMenuComponent() {
         <NavigationMenuItem>
           <NavigationMenuLink
             href="/pricing"
-            className={cn(
-              navigationMenuTriggerStyle(),
-              "text-white bg-transparent hover:bg-white/10 hover:text-white"
-            )}
+            className={cn(navigationMenuTriggerStyle(), linkClass)}
           >
             Pricing
           </NavigationMenuLink>
@@ -134,10 +125,7 @@ export function NavigationMenuComponent() {
         <NavigationMenuItem>
           <NavigationMenuLink
             href="/faq"
-            className={cn(
-              navigationMenuTriggerStyle(),
-              "text-white bg-transparent hover:bg-white/10 hover:text-white"
-            )}
+            className={cn(navigationMenuTriggerStyle(), linkClass)}
           >
             FAQ
           </NavigationMenuLink>
@@ -145,10 +133,7 @@ export function NavigationMenuComponent() {
         <NavigationMenuItem>
           <NavigationMenuLink
             href="https://docs.mediaweb.app"
-            className={cn(
-              navigationMenuTriggerStyle(),
-              "text-white bg-transparent hover:bg-white/10 hover:text-white"
-            )}
+            className={cn(navigationMenuTriggerStyle(), linkClass)}
           >
             Docs
           </NavigationMenuLink>

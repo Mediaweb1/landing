@@ -21,6 +21,11 @@ const FEATURES = [
     description: "Verified stats from IG, TikTok, YouTube & Facebook",
   },
   {
+    title: "Link in bio",
+    href: "/#features",
+    description: "A branded link-in-bio page built into your site",
+  },
+  {
     title: "Custom Domains",
     href: "/#features",
     description: "Launch on your own domain — or a free .mediaweb.app link",
