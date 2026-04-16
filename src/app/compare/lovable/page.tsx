@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { OtherComparisons } from "../_components/other-comparisons";
 
 export const metadata: Metadata = {
   title: "Mediaweb vs Lovable – Creator Portfolio + Media Kit",
@@ -77,7 +78,7 @@ export const metadata: Metadata = {
             "name": "Mediaweb"
           },
           "datePublished": "2025-01-05",
-          "dateModified": "2025-01-05"
+          "dateModified": "2026-04-16"
         }
       ]
     }),
@@ -406,8 +407,10 @@ export default function LovableComparison() {
             </section>
           </div>
 
+          <OtherComparisons exclude="lovable" />
+
           {/* Bottom CTA */}
-          <div className="mt-16 text-center bg-gradient-to-r from-primary-500/20 to-secondary-500/20 border border-primary-500/30 rounded-lg p-8 lg:p-12">
+          <div className="mt-12 text-center bg-gradient-to-r from-primary-500/20 to-secondary-500/20 border border-primary-500/30 rounded-lg p-8 lg:p-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
               Choose the Right Tool for Your Goals
             </h2>

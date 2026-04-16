@@ -90,9 +90,9 @@ const Footer = () => {
             {/* Links */}
             <div className="w-full lg:w-2/3 flex justify-between">
               <div className="flex flex-col space-y-2 md:space-y-4">
-                <h6 className="text-lg md:text-2xl text-primary-400 font-semibold">
+                <Link href="/compare" className="text-lg md:text-2xl text-primary-400 font-semibold hover:text-primary-300 transition-colors">
                   Compare
-                </h6>
+                </Link>
                 <Link
                   className="text-sm md:text-base text-slate-300 hover:text-primary-400 transition-colors"
                   href="/compare/mediakits-io"
@@ -104,6 +104,18 @@ const Footer = () => {
                   href="/compare/lovable"
                 >
                   vs Lovable
+                </Link>
+                <Link
+                  className="text-sm md:text-base text-slate-300 hover:text-primary-400 transition-colors"
+                  href="/compare/linktree"
+                >
+                  vs Linktree
+                </Link>
+                <Link
+                  className="text-sm md:text-base text-slate-300 hover:text-primary-400 transition-colors"
+                  href="/compare/beacons"
+                >
+                  vs Beacons
                 </Link>
               </div>
 
