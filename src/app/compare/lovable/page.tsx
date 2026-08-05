@@ -395,7 +395,7 @@ export default function LovableComparison() {
                   <span className="text-primary-400 font-semibold">
                     $20/month
                   </span>{" "}
-                  with our early bird discount (normally $50/month). And you get
+                  And you get
                   way more creator-specific features: MediaKit, social
                   integrations, image optimization, and custom themes.
                 </p>

@@ -74,8 +74,7 @@ export const metadata: Metadata = {
           "@type": "Offer",
           "price": "20",
           "priceCurrency": "USD",
-          "priceValidUntil": "2027-05-01",
-          "description": "Creator Pro plan — AI-built portfolio, verified mediakit, link-in-bio page, custom domains and free hosting. Early Bird pricing at $20/mo."
+          "description": "Starter plan — AI-built portfolio, link-in-bio page, custom domain and free hosting, starting at $20/mo."
         },
           "publisher": {
             "@id": "https://mediaweb.app/#organization"

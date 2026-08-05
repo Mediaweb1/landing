@@ -267,7 +267,7 @@ export default function BeaconsComparison() {
                 </p>
                 <p className="text-lg">
                   <span className="text-primary-400 font-semibold">Mediaweb</span> is
-                  $20/mo (Early Bird) and gives you a full AI-built portfolio +
+                  $20/mo and gives you a full AI-built portfolio +
                   verified mediakit + branded link-in-bio + custom domain + free
                   hosting + AI agent. More features focused on landing brand deals,
                   at a lower price.

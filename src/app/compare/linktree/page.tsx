@@ -260,7 +260,7 @@ export default function LinktreeComparison() {
                 </p>
                 <p className="text-lg">
                   <span className="text-primary-400 font-semibold">Mediaweb</span> is
-                  $20/mo (Early Bird) and gives you a full AI-built portfolio +
+                  $20/mo and gives you a full AI-built portfolio +
                   verified mediakit + branded link-in-bio + custom domain + free
                   hosting. Way more for roughly the same price as Linktree Premium.
                 </p>

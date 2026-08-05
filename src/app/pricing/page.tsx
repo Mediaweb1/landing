@@ -42,11 +42,17 @@ export const metadata: Metadata = {
           "offers": [
             {
               "@type": "Offer",
-              "name": "Creator - Pro",
+              "name": "Starter",
               "price": "20",
               "priceCurrency": "USD",
-              "priceValidUntil": "2026-03-01",
-              "description": "Creator - Pro plan - 3 websites, 3 custom domains, free hosting, mediakit, custom themes"
+              "description": "Starter plan - 1 website, 1 custom domain, free hosting, custom themes"
+            },
+            {
+              "@type": "Offer",
+              "name": "Pro",
+              "price": "50",
+              "priceCurrency": "USD",
+              "description": "Pro plan - 3 websites, 3 custom domains, free hosting, mediakit, custom themes"
             }
           ],
           "publisher": {

@@ -59,7 +59,7 @@ export const metadata: Metadata = {
           "name": "Do you have a free plan?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We offer a 14-day free trial on all plans—no charge until the trial ends. Plus, our Early Bird Discount gives you $20/month instead of $50/month. Expires May 1, 2026. Lock in this price forever as an early adopter."
+            "text": "We offer a 14-day free trial on all plans—no charge until the trial ends. Plans start at $20/month."
           }
         },
         {
@@ -107,7 +107,7 @@ const faqs = [
   {
     question: "Do you have a free plan?",
     answer:
-      "We offer a 14-day free trial on all plans—no charge until the trial ends. Plus, our Early Bird Discount gives you $20/month instead of $50/month. Expires May 1, 2026. Lock in this price forever as an early adopter.",
+      "We offer a 14-day free trial on all plans—no charge until the trial ends. Plans start at $20/month.",
     featured: true,
   },
   {
@@ -167,7 +167,7 @@ const faqs = [
   {
     question: "Can I have multiple portfolios or websites?",
     answer:
-      "Yes! On our early bird plan with the 60% discount, you can have up to 3 websites. Perfect if you want separate portfolios for different types of work or brands.",
+      "Yes! Our Pro plan supports up to 3 websites. Perfect if you want separate portfolios for different types of work or brands.",
     featured: false,
   },
   {

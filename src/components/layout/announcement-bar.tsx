@@ -11,15 +11,14 @@ export default function AnnouncementBar() {
       >
         <span aria-hidden className="text-primary-300">✦</span>
         <span className="hidden sm:inline">
-          <span className="font-semibold text-white">Early Bird</span>
+          <span className="font-semibold text-white">14-day free trial</span>
           <span className="text-gray-500 mx-2">—</span>
-          60% off. Lock in $20/mo{" "}
-          <span className="line-through text-gray-600">$50</span>. Ends May 1
+          Plans starting at $20/mo. No charge until your trial ends.
         </span>
         <span className="sm:hidden">
-          <span className="font-semibold text-white">Early Bird</span>
+          <span className="font-semibold text-white">14-day free trial</span>
           <span className="text-gray-500 mx-1.5">—</span>
-          60% off · Ends May 1
+          Plans from $20/mo
         </span>
         <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
       </Link>
