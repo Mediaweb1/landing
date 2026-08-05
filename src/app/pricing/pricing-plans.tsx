@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import {
   Badge,
   Button,
@@ -8,6 +9,7 @@ import {
   CardHeader,
   CardTitle,
   Separator,
+  Switch,
 } from "@mediaweb1/sdk/shadcn";
 import { Check, Zap, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -47,6 +49,7 @@ const PRICING_FAQS = [
 
 const Pricing = () => {
   const sectionRef = useScrollReveal();
+  const [interval, setInterval] = useState<"monthly" | "yearly">("monthly");
 
   return (
     <section id="pricing" className="w-full relative px-6 py-20 md:py-28">
@@ -83,10 +86,47 @@ const Pricing = () => {
           </p>
         </div>
 
+        {/* Interval toggle */}
+        <div className="flex items-center justify-center gap-4 mb-10">
+          <span
+            className={cn(
+              "text-sm font-medium",
+              interval === "monthly" ? "text-white" : "text-gray-400",
+            )}
+          >
+            Monthly
+          </span>
+          <Switch
+            checked={interval === "yearly"}
+            onCheckedChange={(checked) =>
+              setInterval(checked ? "yearly" : "monthly")
+            }
+          />
+          <span
+            className={cn(
+              "text-sm font-medium flex items-center gap-2",
+              interval === "yearly" ? "text-white" : "text-gray-400",
+            )}
+          >
+            Yearly
+            <Badge
+              variant="secondary"
+              className="bg-primary-500/20 text-primary-300 border-primary-500/30"
+            >
+              Save up to 30%
+            </Badge>
+          </span>
+        </div>
+
         {/* Plan cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto mb-20">
           {LANDING_PAGE_PLANS.map((plan) => (
-            <PlanCard key={plan.type} plan={plan} isPopular={plan.popular} />
+            <PlanCard
+              key={plan.type}
+              plan={plan}
+              isPopular={plan.popular}
+              interval={interval}
+            />
           ))}
         </div>
 
@@ -124,12 +164,16 @@ const Pricing = () => {
 const PlanCard = ({
   plan,
   isPopular,
+  interval,
   className,
 }: {
   plan: any;
   isPopular: boolean;
+  interval: "monthly" | "yearly";
   className?: string;
 }) => {
+  const price = interval === "monthly" ? plan.price_monthly : plan.price_yearly;
+
   return (
     <Card
       className={cn(
@@ -163,7 +207,7 @@ const PlanCard = ({
               isPopular ? "text-white" : "text-gray-100",
             )}
           >
-            {plan.price_monthly}
+            {price}
           </span>
           <span
             className={cn(
@@ -174,6 +218,16 @@ const PlanCard = ({
             / month
           </span>
         </div>
+        {interval === "yearly" && (
+          <p
+            className={cn(
+              "text-xs",
+              isPopular ? "text-gray-300" : "text-gray-500",
+            )}
+          >
+            billed annually
+          </p>
+        )}
       </CardHeader>
 
       <CardContent className="space-y-6">
@@ -203,7 +257,7 @@ const PlanCard = ({
         </div>
 
         <Link
-          href={`https://dashboard.mediaweb.app/register?plan=${encodeURIComponent(plan.type)}`}
+          href={`https://dashboard.mediaweb.app/register?plan=${encodeURIComponent(plan.type)}&interval=${interval}`}
         >
           <Button
             className={cn(
